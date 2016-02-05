@@ -1,0 +1,74 @@
+body {
+	width: 1200px; margin: 0px auto; padding: 0; font-family: sans-serif;
+}  
+header {
+	position: relative; margin: 0; background-color: white; height: 200px;
+}
+
+header img {
+	 width: 1200px; height: 200px;
+} 	
+
+h1 {
+	font-size: 140px; color: navy;  position: absolute; top: -100px; left: 400px;
+}
+h2 {
+	color: #CF7926;
+}
+h3 {
+	margin-left: 150px; color: #CF7926;
+}
+h5 {
+	font-size: 22px; color: navy; font-weight: bold; position: absolute; top: 100px; left: 600px;
+}
+
+nav { 
+	position: relative; border-bottom: 3px solid navy; width: 800px; left: 200px; 
+}
+nav a {
+	text-decoration: none;
+} 
+nav ul {
+	text-align: center; width: 800px; height: 25px; margin: 0px; padding: 0px; font-size: 18px; padding: 6px 0px;
+}
+nav ul li {
+	 display: inline-block;  width: 150px; height: 20px; margin: 0px -3px; border-left: 1px solid navy; border-right: 1px solid navy;
+}
+nav ul li:hover {
+	background-color: orange; font-weight: bold;
+}
+main {
+	position: relative; width: 1140px; height: 500px; margin: 10px 0px; padding: 10px 30px; background-color: rgba(207, 121, 38, 0.45);
+}
+
+section {
+	width: 800px; height: 500px; overflow: auto; border-right: 3px solid navy; position: absolute; top: 20px; left: 0px; padding: 0px 40px; margin: 0px;
+}
+section p {
+	margin-left: 40px; color: #CF7926;
+}
+aside {
+	 width: 150px; height: 340px; border-bottom: 3px solid navy; position: absolute; bottom: 50px; left: 900px; padding: 0px 40px 50px;
+}
+aside img {
+	width: 150px; height: auto; margin: 30px 0px;
+}
+footer {
+	border-left: 3px solid navy; border-right: 3px solid navy; position: relative; width: 1200px; height: 200px; margin: 0px 0px 2px;
+}
+
+footer img {
+	position: absolute; height: 200px; width: auto; left: 10px; top: 0px;
+}
+footer table {
+	position: absolute; width: 970px; height: 140px; top: 10px; left: 200px; border-bottom: 3px solid navy; margin-right: 20px;
+}
+footer tr {
+	text-align: center;  font-size: 12px;
+}
+footer tr a {
+	text-decoration: none; color: navy;
+}
+footer p {
+	position: absolute; width: 1000px; bottom: 27px; left: 140px; font-weight: bold; color: navy;
+}
