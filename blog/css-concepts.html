@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tech Blog | CSS Post</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+
+<body>
+	<header>
+		<div>
+			<img src="../imgs/subway.png" />
+		</div>
+	<h1>Juli</h1>
+	<h5>Welcome to my DBC tech blog!</h5>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="#" >Projects</a></li>
+			<li><a href="#" >About Me</a></li>
+			<li><a href="index.html" >Blog</a>
+				<!--
+				<ul>
+					<li><a href="blog/git.html" >Git Post</a></li>
+					<li><a href="#" >Post 2</a></li>
+					<li><a href="#" >Post 3</a></li>
+					<li><a href="#" >Post 4</a></li>
+					<li><a href="#" >Post 5</a></li>
+					<li><a href="#" >Post 6</a></li>
+					<li><a href="#" >Post 7</a></li>
+				</ul>
+				-->
+			</li>
+			<li><a href="#" >Resume</a></li>
+			<li><a href="#" >Contact</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section>
+		<h2>CSS Concepts</h2>
+		<h6>February 7, 2016</h6>
+		<h3>display: inline; VS. display: inline-block;</h3>
+    
+		<p>
+			In HTML, elements have a default display value which is either inline or block, depending on what the element is <a href="http://www.w3schools.com/css/css_display_visibility.asp" >w3schools</a> has some good examples of which elements start off with inline and which start off with block. Generally, the block elements have a width that spans the entire page or container they are in while inline elements take up the minimum space required to fit all of their content. Another difference between the two is that inline elements are positioned one right after another on the same line with no spacing while a block element will clear the rest of the line and any following element (whether it is inline or block) will start below it rather than to the right on the same line. Even though all elements have a default display value it is easy to override it by defining the display as either inline or block.
+		</p>
+        <p>
+        	A third option for display is inline-block which combines certain aspects of each. Inline-block elements act like inline elements because they are positioned one right after each other on the same line but can accept specified height and width values which will be respected. Inline elements will not follow any height and width but block elements will and while inline elements take up as little horizontal space as possible, block elements will take up as much horizontal space as possible. Inline-block is a combination that adds the same-line horizontal positioning similar to the float property of inline elements to the defined height and width of block elements.
+        </p>
+		<p>
+			It can be difficult to understand the differences between inline, block, and inline-block through a verbal description but this visual repersentation from Dustwell.com makes the concept much easier to follow:
+		</p>
+        	<a href="http://dustwell.com/div-span-inline-block.html" ><img src="../imgs/inlineVSblock.png" /></a>
+		</section>
+		
+		<aside>
+			<div>
+			<a href="#"><img src="../imgs/github2.png" /></a>
+			</div>
+			<div>
+			<a href="#"><img src="../imgs/linkedin2.png" /></a>
+			</div>
+			<div>
+			<a href="#">Third</a>
+			</div>
+		</aside>
+    </main>
+	<footer>
+		<img src="../imgs/me2.png" />
+			<table>
+			<tr>
+				<td><a href="git.html" >Git Post</a></td>
+				<td><a href="#" >Post 5</a></td>
+				<td><a href="#" >Home</a></td>
+			</tr>
+			<tr>
+				<td><a href="css-concepts.html" >CSS Post</a></td>
+				<td><a href="#" >Post 6</a></td>
+				<td><a href="#" >About Me</a></td>
+			</tr>
+			<tr>
+				<td><a href="#" >Post 3</a></td>
+				<td><a href="#" >Post 7</a></td>
+				<td><a href="#" >Contact</a></td>
+			</tr>
+			<tr>
+				<td><a href="#" >Post 4</a></td>
+				<td></td>
+				<td></td>
+			</tr>	 		
+		</table>
+		<p>&copy; 2016</p>
+	</footer>
+  </body>
+  </html>
