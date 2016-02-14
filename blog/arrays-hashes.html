@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tech Blog | Array/Hash Post</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+
+<body>
+	<header>
+		<div>
+			<img src="../imgs/subway.png" />
+		</div>
+	<h1>Juli</h1>
+	<h5>Welcome to my DBC tech blog!</h5>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="#" >Projects</a></li>
+			<li><a href="#" >About Me</a></li>
+			<li><a href="index.html" >Blog</a>
+				<!--
+				<ul>
+					<li><a href="blog/git.html" >Git Post</a></li>
+					<li><a href="#" >Post 2</a></li>
+					<li><a href="#" >Post 3</a></li>
+					<li><a href="#" >Post 4</a></li>
+					<li><a href="#" >Post 5</a></li>
+					<li><a href="#" >Post 6</a></li>
+					<li><a href="#" >Post 7</a></li>
+				</ul>
+				-->
+			</li>
+			<li><a href="#" >Resume</a></li>
+			<li><a href="#" >Contact</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section>
+		<h2>Arrays and Hashes</h2>
+		<h6>February 14, 2016</h6>
+		<h3>What Are Arrays and Hashes??</h3>
+    
+		<p>
+			Arrays and Hashes are both collections where date is stored, looked up, and modified. In the most current version of Ruby, both hashes and arrays are ordered which means the objects inside are held in a specific sequence and can be referenced by the number of their position. In previous versions of Ruby however, Arrays were ordered but hashes were not.
+		</p>
+		<p>
+			Any object including more arrays, hashes, clases, etc, can be stored in an array. Unlike arrays, hashes store objects in pairs, each of which consist of a key and a value. Values are retrieved from hashes through their corresponding keys. Values can be repeated throughout a hash but keys are unique and can only exist once per hash.
+		</p>
+		<p>
+			Sticky on the Codecademy Forum has a great explanation for the <a href="https://www.codecademy.com/forum_questions/52a69117282ae3085d000d63" >differences between arrays and hashes</a> if there is more confusion!
+		</p>
+        <h3>Choosing: Array vs Hash!!</h3>
+		<p>
+			Functionally, arrays and hashes are very similar but accessing the data is different. In arrays, an object is accessed through its index number. Arrays start with position 0 so for example, if you want the 7th object in an array, you would actually return it with array(6). Objects in hashes are accessed through their keys which will then point at the value so if you want to call an object without knowing its numerical place, hashes are the way to go since you assign your own key: value pairs.
+		</p>
+		<p>
+			Here is an example of an array called winter_clothing followed by a hash that I will also call winter_clothing:
+		</p>
+		<pre><code>
+			winter_clothing ["hat", "mittens", "boots", "pants", "socks", "sweater", "coat", "scarf" ]
+		</code></pre>
+		<pre><code>
+			winter_clothing {	
+						"hat"		=>	"head",
+						"mittens"	=>	"hands",
+						"boots"		=>	"feet",
+						"pants"		=>	"legs",
+						"socks"		=>	"feet"
+						"sweater"	=>	"body"
+						"coat"		=>	"body",
+						"scarf"		=>	"neck" }
+		</code></pre>
+		<p>
+			As you can see, the array is defined using [ ] while the hash is defined using { } but there are multiple ways to define both collections. In the hash above, the keys are on  the left and the values are on the right. Two of the values are repeated but none of the keys can be. Below is the code to return the string "socks" from first the array and the value that socks points to from the hash ("feet"):
+		</p>
+		<pre><code>
+			winter_clothing(4)
+			>"socks"
+		</code></pre>
+		<pre><code>
+			winter_clothing(socks)
+			>"feet"
+		</code></pre>
+		<p>
+			So if I just wanted to go through a list of clothing I should wear in the winter to make sure I remembered everything, I would use an array. On the other hand, if I had all of this winter clothing but did not know which part of my body to wear it on, I could use a hash. I would give my key which is the item of clothing and it would return the value which is the correct body part. In some cases (like for socks and boots), the value/body part is the same even though the keys are not. If the same key showed up twice, a hash would return the most recent value for that key as the key's value because remember, each key is unique within the hash!
+		</p>
+		</section>
+		
+		<aside>
+			<div>
+			<a href="#"><img src="../imgs/github2.png" /></a>
+			</div>
+			<div>
+			<a href="#"><img src="../imgs/linkedin2.png" /></a>
+			</div>
+			<div>
+			<a href="#">Third</a>
+			</div>
+		</aside>
+    </main>
+	<footer>
+		<img src="../imgs/me2.png" />
+			<table>
+			<tr>
+				<td><a href="git.html" >Git Post</a></td>
+				<td><a href="#" >Post 5</a></td>
+				<td><a href="#" >Home</a></td>
+			</tr>
+			<tr>
+				<td><a href="css-concepts.html" >CSS Post</a></td>
+				<td><a href="#" >Post 6</a></td>
+				<td><a href="#" >About Me</a></td>
+			</tr>
+			<tr>
+				<td><a href="arrays-hashes.html" >Arrays and Hashes</a></td>
+				<td><a href="#" >Post 7</a></td>
+				<td><a href="#" >Contact</a></td>
+			</tr>
+			<tr>
+				<td><a href="#" >Post 4</a></td>
+				<td></td>
+				<td></td>
+			</tr>	 		
+		</table>
+		<p>&copy; 2016</p>
+	</footer>
+  </body>
+  </html>
