@@ -18,25 +18,45 @@ h2 {
 h3 {
 	margin-left: 150px; color: #CF7926;
 }
+h4{
+	margin-left: 100px; font-size: 20px; color: navy;
+}
 h5 {
 	font-size: 22px; color: navy; font-weight: bold; position: absolute; top: 100px; left: 600px;
 }
 
 nav { 
-	position: relative; border-bottom: 3px solid navy; width: 800px; left: 200px; 
+	position: relative; border-bottom: 3px solid navy; border-radius: 1px; width: 1000px; left: 80px; 
 }
 nav a {
 	text-decoration: none;
 } 
 nav ul {
-	text-align: center; width: 800px; height: 25px; margin: 0px; padding: 0px; font-size: 18px; padding: 6px 0px;
+	position: relative; text-align: center; width: 1000px; height: 25px; margin: 0px; padding: 0px; font-size: 18px; padding: 6px 0px;
+}
+nav ul:after {
+	clear:both; display: block;
 }
 nav ul li {
 	 display: inline-block;  width: 150px; height: 20px; margin: 0px -3px; border-left: 1px solid navy; border-right: 1px solid navy;
 }
+nav ul li a {
+	display: block;
+}
 nav ul li:hover {
 	background-color: orange; font-weight: bold;
 }
+nav ul ul {
+	position: absolute; margin: 0px; z-index: 1; display: none;
+}
+nav ul li:hover ul {
+	display: block; font-weight: normal;
+}
+nav ul ul li {
+	 position: relative; display: block; border-left: none; border-right: none; border-top: 1px solid navy; border-bottom: 1px solid navy; background-color: white; width: 150px; height: 20px; margin: -1px 1px; padding: 3px 0px;
+}
+
+
 main {
 	position: relative; width: 1140px; height: 500px; margin: 10px 0px; padding: 10px 30px; background-color: rgba(207, 121, 38, 0.45);
 }
@@ -71,4 +91,20 @@ footer tr a {
 }
 footer p {
 	position: absolute; width: 1000px; bottom: 27px; left: 140px; font-weight: bold; color: navy;
+}
+
+form {
+	border: 3px solid navy; border-radius: 10px; width: 600px; margin: 0 auto;
+}
+form fieldset {
+	border: none; 
+}
+form input {
+	min-width: 200px; border: 1px solid navy; margin: 0px 0px 0px 50px; padding: 2px 0px 0px 5px; border-radius: 4px;
+}
+form textarea {
+	min-width: 400px; min-height: 200px; border: 1px solid navy; margin: 0px 0px 0px 50px; padding: 2px 0px 0px 5px; border-radius: 4px;
+}
+form button {
+	width: 100px; height: 30px; margin: 0px 0px 0px 100px; border: 1px solid navy; background-color: #CF7926; color: navy; font-weight: bold; border-radius: 4px;
 }
