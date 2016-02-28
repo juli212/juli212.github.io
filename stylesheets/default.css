@@ -16,7 +16,7 @@ h2 {
 	color: #CF7926;
 }
 h3 {
-	margin-left: 150px; color: #CF7926;
+	margin-left: 20px; color: #CF7926;
 }
 h4{
 	margin-left: 100px; font-size: 20px; color: navy;
@@ -58,7 +58,7 @@ nav ul ul li {
 
 
 main {
-	position: relative; width: 1140px; height: 500px; margin: 10px 0px; padding: 10px 30px; background-color: rgba(207, 121, 38, 0.45);
+	position: relative; width: 1140px; height: 500px; margin: 10px 0px; padding: 10px 30px; background-color: rgba(207, 121, 38, 0.45); 
 }
 
 section {
@@ -74,14 +74,14 @@ aside img {
 	width: 150px; height: auto; margin: 30px 0px;
 }
 footer {
-	border-left: 3px solid navy; border-right: 3px solid navy; position: relative; width: 1200px; height: 200px; margin: 0px 0px 2px;
+	border-left: 3px solid navy; border-right: 3px solid navy; position: relative; width: 1200px; height: 180px; margin: 0px 0px 2px;
 }
 
 footer img {
-	position: absolute; height: 200px; width: auto; left: 10px; top: 0px;
+	position: absolute; height: 160px; width: auto; left: 10px; top: 0px;
 }
 footer table {
-	position: absolute; width: 970px; height: 140px; top: 10px; left: 200px; border-bottom: 3px solid navy; margin-right: 20px;
+	position: absolute; width: 970px; height: 140px; top: 10px; left: 180px; border-bottom: 3px solid navy; margin-right: 20px;
 }
 footer tr {
 	text-align: center;  font-size: 12px;
@@ -90,7 +90,7 @@ footer tr a {
 	text-decoration: none; color: navy;
 }
 footer p {
-	position: absolute; width: 1000px; bottom: 27px; left: 140px; font-weight: bold; color: navy;
+	position: absolute; width: 1000px; bottom: 7px; left: 125px; font-weight: bold; color: navy;
 }
 
 form {
@@ -107,4 +107,50 @@ form textarea {
 }
 form button {
 	width: 100px; height: 30px; margin: 0px 0px 0px 100px; border: 1px solid navy; background-color: #CF7926; color: navy; font-weight: bold; border-radius: 4px;
+}
+
+.aboutme {
+	overflow: hidden;
+}
+.aboutme img {
+	width: 100px; float: left; padding: 0px 25px 20px 60px;
+}
+.aboutme p {
+	width: 550px; float: left; 
+}
+article {
+	width: 348px; padding: 0px 0px 50px 40px; margin: 0px;
+}
+.one{
+	float: left; border-right: 5px solid #CF7926;
+}
+.two{
+	float: right;
+}
+article img {
+	border-top: 10px solid #CF7926; border-left: 10px solid #CF7926; border-right: 10px solid #CF7926; border-bottom: 60px solid #CF7926; border-radius: 5px; 
+}
+.two article {
+	position: relative;
+}
+.pic {
+	position: absolute;
+}
+.pic img {
+	width: 150px; height: 150px;  display: inline-block;  opacity: 0.4;  border: none;
+}
+.pic img:hover {
+		opacity: 1.0; 
+}
+.ps {
+	  position: absolute; 
+}
+.ps div {
+	width: 150px; height: 150px; display: inline-block; padding: 1px 0px;
+}
+.ps p {
+	  font-weight: bold; color: white; padding: 0px; text-align: left; 
+}
+.ps div:hover {
+		 opacity: 1;
 }
