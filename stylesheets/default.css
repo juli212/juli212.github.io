@@ -131,26 +131,25 @@ article img {
 	border-top: 10px solid #CF7926; border-left: 10px solid #CF7926; border-right: 10px solid #CF7926; border-bottom: 60px solid #CF7926; border-radius: 5px; 
 }
 .two article {
-	position: relative;
+	position: relative; 
 }
-.pic {
-	position: absolute;
+
+.box {
+	position: relative; padding: 20px 0px 0px 0px;
 }
-.pic img {
-	width: 150px; height: 150px;  display: inline-block;  opacity: 0.4;  border: none;
+.box img {
+	width: 150px; height: 150px;  display: inline-block;  opacity: 0.4;  border: none;  position: relative; top: -60px; left: 20px; 
+	}
+.box div { 
+	display: inline-block; width: 150px; height: 150px; position: relative; margin-bottom: -180px;
 }
-.pic img:hover {
-		opacity: 1.0; 
+.box div p {
+	color: white; font-weight: bold;  text-align: center; vertical-align: center; 
 }
-.ps {
-	  position: absolute; 
+
+.box div:hover {
+	
 }
-.ps div {
-	width: 150px; height: 150px; display: inline-block; padding: 1px 0px;
-}
-.ps p {
-	  font-weight: bold; color: white; padding: 0px; text-align: left; 
-}
-.ps div:hover {
-		 opacity: 1;
+.box img:hover {
+	opacity: 1; 
 }
