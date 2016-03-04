@@ -1,5 +1,5 @@
 body {
-	width: 1200px; margin: 0px auto; padding: 0; font-family: sans-serif;
+	position: relative; width: 1200px; height: 100%; margin: 0px auto; padding: 0; font-family: sans-serif; background-color: rgba(207, 121, 38, 0.45); 
 }  
 header {
 	position: relative; margin: 0; background-color: white; height: 200px;
@@ -56,29 +56,32 @@ nav ul ul li {
 	 position: relative; display: block; border-left: none; border-right: none; border-top: 1px solid navy; border-bottom: 1px solid navy; background-color: white; width: 150px; height: 20px; margin: -1px 1px; padding: 3px 0px;
 }
 
-
-main {
-	position: relative; width: 1140px; height: 500px; margin: 10px 0px; padding: 10px 30px; background-color: rgba(207, 121, 38, 0.45); 
-}
-
 section {
-	width: 800px; height: 500px; overflow: auto; border-right: 3px solid navy; position: absolute; top: 20px; left: 0px; padding: 0px 40px; margin: 0px;
+	width: 840px; border-right: 3px solid navy; position: relative; top: -20px; left: 0px; padding: 10px 40px 10px 0px; margin: 20px 0px 0px; background-color: rgba(207, 121, 38, 0.45);
+}
+section h2 {
+	margin-left: 60px; font-size: 40px;
 }
 section p {
 	margin-left: 40px; color: #CF7926;
 }
 aside {
-	 width: 150px; height: 340px; border-bottom: 3px solid navy; position: absolute; bottom: 50px; left: 900px; padding: 0px 40px 50px;
+	 width: 300px; border-bottom: 3px solid navy; padding: 0px; 
+	 position: relative; left: 900px; top: -415px;
+	background-color: rgba(207, 121, 38, 0.45);
+}
+aside div {
+	width: 250px; position: relative; top: 0px; border: margin: 30px 0px; padding: 50px 40px 20px;
 }
 aside img {
-	width: 150px; height: auto; margin: 30px 0px;
+	width: 200px; display: inline; 
 }
 footer {
-	border-left: 3px solid navy; border-right: 3px solid navy; position: relative; width: 1200px; height: 180px; margin: 0px 0px 2px;
+	border-left: 3px solid navy; border-right: 3px solid navy; position: absolute; bottom: 120px; width: 1198px; height: 180px; margin: 0px 0px 2px -1px; background-color: white;
 }
 
 footer img {
-	position: absolute; height: 160px; width: auto; left: 10px; top: 0px;
+	position: absolute; height: 160px; width: auto; left: 10px; top: 10px;
 }
 footer table {
 	position: absolute; width: 970px; height: 140px; top: 10px; left: 180px; border-bottom: 3px solid navy; margin-right: 20px;
@@ -109,48 +112,3 @@ form button {
 	width: 100px; height: 30px; margin: 0px 0px 0px 100px; border: 1px solid navy; background-color: #CF7926; color: navy; font-weight: bold; border-radius: 4px;
 }
 
-.aboutme {
-	overflow: hidden;
-}
-.aboutme img {
-	width: 100px; float: left; padding: 0px 25px 20px 60px;
-}
-.aboutme p {
-	width: 550px; float: left; 
-}
-article {
-	width: 348px; padding: 0px 0px 50px 40px; margin: 0px;
-}
-.one{
-	float: left; border-right: 5px solid #CF7926;
-}
-.two{
-	float: right;
-}
-article img {
-	border-top: 10px solid #CF7926; border-left: 10px solid #CF7926; border-right: 10px solid #CF7926; border-bottom: 60px solid #CF7926; border-radius: 5px; 
-}
-.two article {
-	position: relative;
-}
-.pic {
-	position: absolute;
-}
-.pic img {
-	width: 150px; height: 150px;  display: inline-block;  opacity: 0.4;  border: none;
-}
-.pic img:hover {
-		opacity: 1.0; 
-}
-.ps {
-	  position: absolute; 
-}
-.ps div {
-	width: 150px; height: 150px; display: inline-block; padding: 1px 0px;
-}
-.ps p {
-	  font-weight: bold; color: white; padding: 0px; text-align: left; 
-}
-.ps div:hover {
-		 opacity: 1;
-}
