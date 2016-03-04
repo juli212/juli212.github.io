@@ -1,0 +1,65 @@
+section {
+	width: 840px; border-right: 3px solid navy; position: relative; top: -20px; left: 0px; padding: 10px 40px 0px 0px; margin: 20px 0px 0px; background-color: rgba(207, 121, 38, 0.45);
+}
+section h2 {
+	margin-left: 60px; font-size: 40px;
+}
+section p {
+	margin-left: 40px; color: #CF7926;
+}
+aside {
+	 width: 300px; border-bottom: 3px solid navy; padding: 0px; 
+	 position: relative; left: 900px; top: -341px;
+	background-color: rgba(207, 121, 38, 0.45);
+}
+aside div {
+	width: 250px; position: relative; top: -1800px; border: margin: 30px 0px; padding: 30px 40px;
+}
+aside img {
+	width: 200px; display: inline; 
+}
+
+.aboutme {
+	overflow: hidden;
+}
+.aboutme img {
+	width: 100px; float: left; padding: 0px 25px 20px 60px;
+}
+.aboutme p {
+	width: 550px; float: left; 
+}
+article {
+	width: 375px; padding: 0px 0px 50px 40px; margin: 0px; 
+}
+.one{
+	float: left; border-right: 5px solid #CF7926; background-color: rgba(207, 121, 38, 0.45);
+}
+.two{
+	float: right; border-top: 1px solid white; border-bottom: 1px solid white;
+}
+article img {
+	border-top: 10px solid #CF7926; border-left: 10px solid #CF7926; border-right: 10px solid #CF7926; border-bottom: 60px solid #CF7926; border-radius: 5px; 
+}
+.two article {
+	position: relative; 
+}
+
+.box {
+	position: relative; padding: 20px 0px 0px 0px;
+}
+.box img {
+	width: 150px; height: 150px;  display: inline-block;  opacity: 0.4;  border: none;  position: relative; top: -60px; left: 20px; 
+	}
+.box div { 
+	display: inline-block; width: 150px; height: 150px; position: relative; margin-bottom: -180px;
+}
+.box div p {
+	color: white; font-weight: bold;  text-align: center; vertical-align: center; 
+}
+
+.box div:hover {
+	
+}
+.box img:hover {
+	opacity: 1; 
+}
