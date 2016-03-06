@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS vs Ruby | Tech Blog</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../imgs/titlepic.png" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+
+<body>
+	<header>
+		<div>
+			<img src="../imgs/subway.png" />
+		</div>
+	<h1>Juli</h1>
+	<h5>Welcome to my DBC tech blog!</h5>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="../index.html" >Home</a></li>
+			<li><a href="../projects/index.html" >Projects</a>
+                <ul>
+                    <li><a href="#" >Project 1</a></li>
+                    <li><a href="#" >Project 2</a></li>
+                    <li><a href="#" >Project 3</a></li>
+                </ul>
+            </li>
+			<li><a href="../about.html" >About Me</a></li>
+			<li><a href="../index.html" >Blog</a>
+				<ul>
+					<li><a href="git.html" >Git Post</a></li>
+					<li><a href="css-concepts.html" >CSS Post</a></li>
+					<li><a href="arrays-hashes.html" >Arrays/Hashes</a></li>
+					<li><a href="enumerable-methods.html" >Enumerables Post</a></li>
+					<li><a href="ruby-classes.html" >Ruby Class Post</a></li>
+					<li><a href="javascript.html" >JavaScript Post</a></li>
+					<li><a href="#" >Post 7</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="#" >Resume</a></li>
+			<li><a href="../contact.html" >Contact</a></li>
+		</ul>
+	</nav>
+		<section>
+		<h2>JavaScript vs Ruby: LOOPS</h2>
+		<h6>March 05, 2016</h6>
+		<h3>Why We Loop</h3>
+    	<p>
+        Looping is a great way to make code more efficient and readable by removing repetitive lines, as long as you make sure to end the loop! Otherise the deadly infinite loop will destroy everything (or at least freak out when you're testing it...). Looping through objects is a great way to save time and space when writing code. The processes when using JavaScript and Ruby are pretty similar, though the syntax may differ slightly.
+		</p>
+		<p>
+		Below I will give a simple loop in JavaScript which will print out the numbers 1-5 multiplied by 10:
+		</p>
+         <blockquote>
+        	<pre>
+        		<code>
+                //JavaScript:
+                for (var i = 1; i < 6; i++) {
+                    console.log(i*10);
+                }
+
+                >10
+                >20
+                >30
+                >40
+                >50
+                </code>
+            </pre>
+        </blockquote>
+        <p> 
+        And now the same loop in Ruby:
+        <blockquote>
+            <pre>
+                <code>
+                # Ruby:
+                i = 1
+                while i < 6 do
+                    x = i * 10
+                    i = i + 1
+                    puts "#{x}"
+                end
+
+                >10
+                >20
+                >30
+                >40
+                >50
+        		</code>
+        	</pre>
+        </blockquote>
+		<p>
+        In both examples above, we get the same results through the loops, even though they are constructed differently. It is very interesting to see the similarities between Ruby and JavaScript since Ruby is a server-side language while JavaScript is client-side. Despite their differences, Ruby and JavaScript can preform many of the same tasks, just using different syntax.
+		</p>
+        <p>
+        If you are wondering which language to use, it makes most sense to use whichever language you know better or are attempting to learn more of, though it would also make sense to take into account whether your code will be server-side or client-side.
+        </p>
+		</section>
+		
+		<aside>
+			<div>
+			<a href="https://github.com/juli212"><img src="../imgs/github2.png" /></a>
+			</div>
+			<div>
+			<a href="#"><img src="../imgs/linkedin2.png" /></a>
+			</div>
+			<div>
+			<a href="#">Third</a>
+			</div>
+		</aside>
+	<footer>
+		<a href="../index.html"><img src="../imgs/me2.png" /></a>
+			<table>
+			<tr>
+				<td><a href="git.html" >Git Post</a></td>
+				<td><a href="ruby-classes.html" >Ruby Class Post</a></td>
+				<td><a href="#" >Home</a></td>
+			</tr>
+			<tr>
+				<td><a href="css-concepts.html" >CSS Post</a></td>
+				<td><a href="javascript.html" >JavaScript Post</a></td>
+				<td><a href="../aboutme.html" >About Me</a></td>
+			</tr>
+			<tr>
+				<td><a href="arrays-hashes.html" >Arrays/Hashes Post</a></td>
+				<td><a href="#" >Post 7</a></td>
+				<td><a href="../contact.html" >Contact</a></td>
+			</tr>
+			<tr>
+				<td><a href="enumerable-methods.html" >Enumerables Post</a></td>
+				<td></td>
+				<td></td>
+			</tr>	 		
+		</table>
+		<p>&copy; 2016</p>
+	</footer>
+  </body>
+</html>
