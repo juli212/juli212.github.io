@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CHEATSHEET | Tech Blog</title>
+  <meta charset="UTF-8">
+  <link rel="icon" href="../imgs/titlepic.png" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+
+<body>
+	<header>
+		<div>
+			<img src="../imgs/subway.png" />
+		</div>
+	<h1>Juli</h1>
+	<h5>Welcome to my DBC tech blog!</h5>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="../index.html" >Home</a></li>
+			<li><a href="index.html" >Projects</a>
+      	<ul>
+        	<li><a href="cheat-sheet.html" >My CheatSheet</a></li>
+        	<li><a href="#" >Project 2</a></li>
+        	<li><a href="#" >Project 3</a></li>
+      	</ul>
+      </li>
+			<li><a href="../about.html" >About Me</a></li>
+			<li><a href="../index.html" >Blog</a>
+				<ul>
+					<li><a href="../blog/git.html" >Git Post</a></li>
+					<li><a href="../blog/css-concepts.html" >CSS Post</a></li>
+					<li><a href="../blog/arrays-hashes.html" >Arrays/Hashes</a></li>
+					<li><a href="../blog/enumerable-methods.html" >Enumerables Post</a></li>
+					<li><a href="../blog/ruby-classes.html" >Ruby Class Post</a></li>
+					<li><a href="../blog/javascript.html" >JavaScript Post</a></li>
+					<li><a href="../blog/tech.html" >Recursion Post</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="#" >Resume</a></li>
+			<li><a href="../contact.html" >Contact</a></li>
+		</ul>
+	</nav>
+		<section>
+		<h2>MY CHEAT SHEET</h2>
+		<h6>March 13, 2016</h6>
+		<h3> Some Basics:</h3>
+    <article> <p>
+  		 The really basic things I always forget to do: 
+  		 git commit -m "message!" before I push my branch to GitHub
+  		 cd /vagrant before I freak out because I cannot find my shared folder in my VM
+  		 </p>
+		</article>
+		<article> <p>
+			CSS positioning issues:
+			The relative + absolute always gets to me... Luckily BarelyFitz usually clears up my confusion:
+		<a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/" ><img src="../imgs/barelyfitz/png" /></a>
+		</p>
+		</article>
+		<article>
+			<h3>Ruby vs JS:</h3>
+		<p>
+			Defining a Hash:
+			<blockquote>
+				<pre>
+					<code>
+			# Ruby: 
+			hash_name = { hash_key: hash_value , sechash_key: sechash_value}
+			// JS: 
+			var hash_name = { hash_key: hash_value , sechash_key: sechash_value}
+					</code>
+				</pre>
+			</blockquote>
+			~ hashes are simply called objects in JS and the keys are variables... basically the same syntax for each!
+		</p>
+		<p>
+			For Loops:
+			<blockquote>
+				<pre>
+					<code>
+					// JS:
+					for (var i=0; i !== var_value; i++)  {
+					/*actions*/
+					}
+					# Ruby:
+					for varibale_name != variable_value do 
+					 #actions
+					 end
+					end
+					</code>
+				</pre>
+			</blockquote>
+			</p>
+			<p>
+			While Loops:
+			<blockquote>
+				<pre>
+					<code>
+			//JS:
+			while (x<10) {
+ 			//actions;
+			x++;
+			}
+			#Ruby:
+			while (x < 10)
+			#actions 
+			x +=1
+			end
+					</code>
+				</pre>
+			</blockquote>
+		</p>
+		<p>
+			Defining Functions:
+			<blockquote>
+				<pre>
+					<code>
+			JS:
+			function sayhello(name) {
+			return “ Helllo “ + name
+			}
+			Ruby:
+			def sayhello(name) 
+			p “Hello” + name.to_s
+			end
+			</code>
+				</pre>
+			</blockquote>
+		</p>
+		</article>
+		<article>
+		</article>
+		<article>
+		</article>
+		</section>
+		
+		<aside>
+			<div>
+			<a href="https://github.com/juli212"><img src="../imgs/github2.png" /></a>
+			</div>
+			<div>
+			<a href="#"><img src="../imgs/linkedin2.png" /></a>
+			</div>
+			<div>
+			<a href="#">Third</a>
+			</div>
+		</aside>
+	<footer>
+		<a href="../index.html"><img src="../imgs/me2.png" /></a>
+			<table>
+			<tr>
+				<td><a href="git.html" >Git Post</a></td>
+				<td><a href="ruby-classes.html" >Ruby Class Post</a></td>
+				<td><a href="../index.html" >Home</a></td>
+			</tr>
+			<tr>
+				<td><a href="css-concepts.html" >CSS Post</a></td>
+				<td><a href="javascript.html" >JavaScript Post</a></td>
+				<td><a href="../aboutme.html" >About Me</a></td>
+			</tr>
+			<tr>
+				<td><a href="arrays-hashes.html" >Arrays/Hashes Post</a></td>
+				<td><a href="tech.html" >Recursion Post</a></td>
+				<td><a href="../contact.html" >Contact</a></td>
+			</tr>
+			<tr>
+				<td><a href="enumerable-methods.html" >Enumerables Post</a></td>
+				<td></td>
+				<td></td>
+			</tr>	 		
+		</table>
+		<p>&copy; 2016</p>
+	</footer>
+  </body>
+</html>
