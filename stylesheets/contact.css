@@ -1,0 +1,15 @@
+form {
+	border: 3px solid #FF0000; border-radius: 10px; width: 600px; margin: 0 auto;
+}
+form fieldset {
+	border: none; 
+}
+form input {
+	min-width: 200px; border: 1px solid #FF0000; margin: 0px 0px 0px 50px; padding: 2px 0px 0px 5px; border-radius: 4px;
+}
+form textarea {
+	min-width: 400px; min-height: 200px; border: 1px solid #FF0000; margin: 0px 0px 0px 50px; padding: 2px 0px 0px 5px; border-radius: 4px;
+}
+form button {
+	width: 100px; height: 30px; margin: 0px 0px 0px 100px; border: 1px solid #FF0000; background-color: #A9A9A9; color: #FF0000; font-weight: bold; border-radius: 4px;
+}
