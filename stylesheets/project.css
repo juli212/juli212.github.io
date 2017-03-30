@@ -3,7 +3,10 @@ h2 {
 }
 
 section ul {
-	list-style: none; margin: 30px 0px 0px 130px; width: 600px; height: 300px;
+	position: relative;
+	width: 90%;
+	text-decoration: none;
+	list-style-type: none;
 }
 
 section ul li {
@@ -13,10 +16,33 @@ section ul a {
 	text-decoration: none; color: #FF0000; font-size: 20px;
 }
 
+section ul a:hover {
+	text-decoration: underline;
+}
+
 section img {
 	padding: 0px 40px;
 }
 
 article {
 	width: 350px; height: 200px; display: inline-block; border: 3px solid navy; border-radius: 10px; margin: 0px 30px 10px; 
+}
+
+section h6 {
+	text-align: center;
+	margin: 0px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+p.bottom {
+	font-size: 12px;
+}
+
+section p span a {
+	text-decoration: none;
+	color: red;
+}
+
+section p span a:hover {
+	text-decoration: underline;
 }
