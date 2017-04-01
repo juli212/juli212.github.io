@@ -11,7 +11,7 @@ $(document).ready(function(){
 		$entryBox.append(newEvent)
 		
 		var post = "../achilles/entry" + n + ".html" 
-		$($('.blog-entry')[i]).load(post)
+		$($('.blog-entry')[i]).find('div').load(post)
 
 		if ($($('.blog-entry')[i]).hasClass('pre-op') ) {
 			$('.tl-entry').last().addClass('pre')
