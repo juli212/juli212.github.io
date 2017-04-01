@@ -9,6 +9,10 @@ $(document).ready(function(){
 		var d = $($('.blog-entry')[i]).find('.entry-day').text()
 		var newEvent = beginning + n + middle + d +end
 		$entryBox.append(newEvent)
+		
+		var post = "../achilles/entry" + n + ".html" 
+		$($('.blog-entry')[i]).load(post)
+
 		if ($($('.blog-entry')[i]).hasClass('pre-op') ) {
 			$('.tl-entry').last().addClass('pre')
 		} else if ($($('.blog-entry')[i]).hasClass('post-op')) {
