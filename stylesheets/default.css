@@ -1,27 +1,20 @@
-/*
-cc0000= red
-A9A9A9 = darker grey
-D3D3D3 = lighter grey
+html {
+	height: 100%;
+	margin: 0 auto;
+	background-color: white;
+}
 
-body
-	header
-	nav
-	section
-		?article?
-	aside
-	footer
-
- */
 body {
+	background-color: #F0F0F0;
 	position: relative;
 	width: 100%;
 	max-width: 1200px;
 	min-width: 300px;
-	height: 100%;
-	margin: 0px auto;
+	min-height: 100%;
+	margin: auto;
 	padding: 0;
+	display: block;
 	font-family: sans-serif;
-	background-color: white; 
 }
 
 
@@ -95,7 +88,6 @@ h5 {
 }
 nav { 
 	position: relative;
-	/*border-bottom: 3px solid #cc0000;*/
 	border-radius: 1px;
 	width: 100%;
 	margin: 0 auto; 
@@ -118,8 +110,6 @@ nav ul li {
 	width: 20%;
 	height: 40px;
 	margin: 0px -2.5px;
-	/*border-left: 2px solid #cc0000;*/
-	/*border-right: 2px solid #cc0000;*/
 	position: relative;
 }
 
@@ -139,7 +129,6 @@ nav ul ul {
 	position: absolute;
 	margin: 0px;
 	z-index: 1;
-	/*display: block;*/
 	display: none;
 	padding: 0px;
 	font-weight: normal
@@ -202,8 +191,16 @@ nav ul ul li a {
 	}
 }
 
+.main {
+	position: relative;
+	margin-bottom: 180px;
+	display: inline-block;
+	width: 100%;
+}
+
 section {
 	width: 100%;
+	min-height: 208px;
 	padding: 10px 0px;
 	margin: 0px;
 	background-color: #D3D3D3;
@@ -223,6 +220,8 @@ section p {
 }
 
 aside {
+	position: relative;
+	bottom: 0;
 	width: 100%;
 	min-width: 100px;
 	padding: 0px;
@@ -269,29 +268,32 @@ aside a img {
 }
 
 footer {
-	border-top: 2px solid white;
 	width: 100%;
 	height: 180px;
-	margin: 0px 0px 2px -1px;
+	margin: 0 auto;
 	background-color: #A9A9A9;
 	clear: both; 
-	position: relative;
+	position: absolute;
+	bottom: 0;
 	border-radius: 3px;
 	overflow-x: hidden;
 }
 
 footer img {
+	width: 17%;
+	/*height: 160px;*/
 	position: relative;
-	height: 160px;
-	width: auto;
-	left: 10px;
-	top: 10px;
+	/*width: auto;*/
 	display: inline-block;
+	top: 10px;
+	left: 10px;
 }
+
 footer table {
 	position: relative;
-	width: 60%;
-	max-width: 70%;
+	/*width: 60%;*/
+	width: 65%;
+	/*max-width: 70%;*/
 	height: 140px;
 	top: 0px;
 	left: 0;
@@ -320,6 +322,13 @@ footer tr td {
 	padding: 15px 7%;
 }
 
+@media only screen and (min-width: 600px) {
+	footer img {
+		height: 160px;
+		width: auto;
+	}
+}
+
 footer p {
 	position: absolute;
 	bottom: 2px;
@@ -339,5 +348,6 @@ hr {
 	height: 3px;
 	width: 100%;
 	left: 120px;
+	right: 3px;
 	margin-top: -15px;
 }
