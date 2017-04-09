@@ -1,23 +1,11 @@
-/*
-cc0000= red
-A9A9A9 = darker grey
-D3D3D3 = lighter grey
-
-body
-	header
-	nav
-	section
-		?article?
-	aside
-	footer
-
- */
 html {
 	height: 100%;
 	margin: 0 auto;
+	background-color: white;
 }
 
 body {
+	background-color: #F0F0F0;
 	position: relative;
 	width: 100%;
 	max-width: 1200px;
@@ -27,7 +15,6 @@ body {
 	padding: 0;
 	display: block;
 	font-family: sans-serif;
-	background-color: white; 
 }
 
 
@@ -101,7 +88,6 @@ h5 {
 }
 nav { 
 	position: relative;
-	/*border-bottom: 3px solid #cc0000;*/
 	border-radius: 1px;
 	width: 100%;
 	margin: 0 auto; 
@@ -124,8 +110,6 @@ nav ul li {
 	width: 20%;
 	height: 40px;
 	margin: 0px -2.5px;
-	/*border-left: 2px solid #cc0000;*/
-	/*border-right: 2px solid #cc0000;*/
 	position: relative;
 }
 
@@ -145,7 +129,6 @@ nav ul ul {
 	position: absolute;
 	margin: 0px;
 	z-index: 1;
-	/*display: block;*/
 	display: none;
 	padding: 0px;
 	font-weight: normal
@@ -285,10 +268,9 @@ aside a img {
 }
 
 footer {
-	border-top: 2px solid white;
 	width: 100%;
 	height: 180px;
-	margin: 0px;
+	margin: 0 auto;
 	background-color: #A9A9A9;
 	clear: both; 
 	position: absolute;
@@ -298,9 +280,10 @@ footer {
 }
 
 footer img {
-	height: 160px;
+	width: 17%;
+	/*height: 160px;*/
 	position: relative;
-	width: auto;
+	/*width: auto;*/
 	display: inline-block;
 	top: 10px;
 	left: 10px;
@@ -308,8 +291,9 @@ footer img {
 
 footer table {
 	position: relative;
-	width: 60%;
-	max-width: 70%;
+	/*width: 60%;*/
+	width: 65%;
+	/*max-width: 70%;*/
 	height: 140px;
 	top: 0px;
 	left: 0;
@@ -338,6 +322,13 @@ footer tr td {
 	padding: 15px 7%;
 }
 
+@media only screen and (min-width: 600px) {
+	footer img {
+		height: 160px;
+		width: auto;
+	}
+}
+
 footer p {
 	position: absolute;
 	bottom: 2px;
@@ -359,5 +350,4 @@ hr {
 	left: 120px;
 	right: 3px;
 	margin-top: -15px;
-	/*margin-right: 5px;*/
 }
