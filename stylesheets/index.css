@@ -1,0 +1,34 @@
+section h2 {
+	margin: 0;
+}
+
+.index-face {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.index-face img {
+	width: 90%;
+	height: auto;
+	margin: 0px 5%;
+}
+
+.index-blurb {
+
+}
+
+@media only screen and (min-width: 600px) {
+	.index-face {
+		width: 30%;
+		margin: 0;
+		float: left;
+	}
+
+	.index-blurb {
+		width: 55%;
+		height: 100%;
+		margin-left: 3%;
+		float: left;
+		font-size: 20px;
+	}
+}
