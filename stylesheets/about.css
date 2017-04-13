@@ -22,18 +22,18 @@ article h3 {
 	position: relative;
 	display: inline-block;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .new-box div {
-	max-width: 45%;
-	/*width: 150px;*/
-	/*height: auto;*/
+	width: 144px;
+	height: 144px;
 	padding: 0;
 	position: relative;
 	margin: 0 auto;
-	margin: 5px 2%;
+	margin: 5px;
 	display: inline-block;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .new-box img {
@@ -56,12 +56,12 @@ article h3 {
 	text-align: center;
 	z-index: 1;
 	position: absolute;
-	bottom: -5px;
+	bottom: -10px;
 	left: -28px;
 	font-size: 10px;
 }
 
-@media only screen and (min-width: 600px) {
+/*@media only screen and (min-width: 600px) {
 	.new-box {
 		padding-left: 1%;
 	}
@@ -69,4 +69,4 @@ article h3 {
 		max-width: 24%;
 		margin: 0px;
 	}
-}
+}*/
