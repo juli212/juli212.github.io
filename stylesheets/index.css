@@ -2,8 +2,14 @@ section h2 {
 	margin: 0;
 }
 
+.index-top {
+	position: relative;
+	width: 100%;
+}
+
 .index-face {
-	width: 60%;
+	position: relative;
+	width: 150px;
 	margin: 0 auto;
 }
 
@@ -11,24 +17,72 @@ section h2 {
 	width: 90%;
 	height: auto;
 	margin: 0px 5%;
+	border-radius: 50% 10% 50% 40%;
 }
 
 .index-blurb {
-
+	position: relative;
 }
 
 @media only screen and (min-width: 600px) {
 	.index-face {
-		width: 30%;
-		margin: 0;
 		float: left;
+	}
+	.inline-face {
+		margin: 0px 5% 10px;
 	}
 
 	.index-blurb {
-		width: 55%;
-		height: 100%;
-		margin-left: 3%;
-		float: left;
+		margin-top: 30px;
+		margin-left: 140px;
 		font-size: 20px;
 	}
+}
+
+.index-icons {
+	clear: both;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.index-icon {
+	position: relative;
+	width: 33.3333%;
+	margin: 0 auto;
+	min-width: 100px;
+	text-align: center;
+	display: inline-block;
+}
+
+.index-icon-pic {
+	width: 70px;
+	height: 70px;
+	position: relative;
+	margin: 0 auto;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.index-icon-pic img {
+	position: relative;
+	width: 40px;
+	margin: 15px;
+}
+
+.index-icon-pic:hover img {
+	width: 50px;
+	margin: 10px;
+}
+
+.index-icon h6 {
+	margin: 0;
+	font-size: 17px;
+	color: #cc0000;
+}
+
+.index-icon p {
+	margin: 0;
+	font-size: 14px;
 }
