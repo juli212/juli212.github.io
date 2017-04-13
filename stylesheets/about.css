@@ -16,6 +16,47 @@ article h3 {
 	text-align: center;
 }
 
+#screen-hide {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #666666;
+	opacity: 0.9;
+	z-index: 6;
+	display: none;
+}
+
+#picture-box {
+	position: fixed;
+	top: 20%;
+	width: 90%;
+	height: auto;
+	left: 5%;
+	margin: 0 auto;
+	padding: 0;
+	z-index: 7;
+	display: none;
+}
+
+#picture-box img {
+	width: 100%;
+	height: auto;
+	opacity: 1;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+@media only screen and (min-width: 600px) {
+	#picture-box {
+		top: 15%;
+		width: 50%;
+		left: 25%;
+	}
+}
+
 .new-box {
 	width: 100%;
 	padding: 0;
