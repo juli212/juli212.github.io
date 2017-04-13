@@ -17,7 +17,7 @@ section h2 {
 	width: 90%;
 	height: auto;
 	margin: 0px 5%;
-	border-radius: 50% 10% 50% 40%;
+	border-radius: 30%;
 }
 
 .index-blurb {
@@ -28,8 +28,9 @@ section h2 {
 	.index-face {
 		float: left;
 	}
-	.inline-face {
+	.index-face img {
 		margin: 0px 5% 10px;
+		border-radius: 50% 10% 50% 40%;
 	}
 
 	.index-blurb {
@@ -84,5 +85,6 @@ section h2 {
 
 .index-icon p {
 	margin: 0;
+	color: #4d4d4d;
 	font-size: 14px;
 }
