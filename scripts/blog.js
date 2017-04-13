@@ -38,6 +38,16 @@ $(document).ready(function(){
 		$(showEntry).toggle()
 	})
 
+	var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+	var injuryDate = new Date(2017, 00, 27);
+	injuryDate.setHours(21);
+	injuryDate.setMinutes(30);
+	var today = new Date(); // today
+
+	var fromInjury = Math.round(Math.abs((injuryDate.getTime() - today.getTime())/(oneDay)));
+	var fromSurgery = fromInjury - 21
+	$('#injury-time').text(fromInjury);
+	$('#surgery-time').text(fromSurgery);
 })
 
 var beginning = "<div id='tl-entry-"
@@ -45,5 +55,3 @@ var beginning = "<div id='tl-entry-"
 var middle = "' class='tl-entry'><div class='tl-label'><a href='#'>"
 
 var end = "</a></div></div>"
-
-// var timelineDownEntry = "<div id='tl-entry-1' class='tl-entry tl-down past'><div class='tl-label'><a href='#'>word</a></div></div>"

@@ -2,7 +2,7 @@ h2 {
 	font-size: 60px; color: #FF0000; text-align: center; padding: 5px; margin: 0px;
 }
 
-section ul {
+/*section ul {
 	position: relative;
 	width: 90%;
 	text-decoration: none;
@@ -18,7 +18,7 @@ section ul a {
 
 section ul a:hover {
 	text-decoration: underline;
-}
+}*/
 
 section img {
 	padding: 0px 40px;

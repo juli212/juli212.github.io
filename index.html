@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="imgs/titlepic.png" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
 </head>
 
 <body>
@@ -17,46 +18,67 @@
 		</div>
 		<h1>Juli</h1>
 		<h1 id="j2">Juli</h1>
-		<!-- <h5>welcome to my chaos</h5> -->
 	</header>
 	<nav>
 		<ul>
-			<li><a href="index.html" >Home</a></li>
-			<li><a href="projects/index.html" >Projects</a>
+			<li><a href="index.html" class="top-level">Home</a></li>
+			<li><a href="projects/index.html" class="top-level">Projects</a>
 				<ul>
-					<li><a href="projects/pubgamer.html" >PubGamer</a></li>
-					<li><a href="projects/littlefoot.html" >LittleFoot</a></li>
-					<li><a href="projects/theresaboard.html" >There's A Board!</a></li>
+					<li><a href="projects/pubgamer.html" class="second-level">PubGamer</a></li>
+					<li><a href="projects/littlefoot.html" class="second-level">LittleFoot</a></li>
+					<li><a href="projects/theresaboard.html" class="second-level">There's A Board!</a></li>
 				</ul>
 			</li>
-			<li><a href="about.html" >About Me</a></li>
-			<li><a href="blog/index.html" >Blog</a>
+			<li><a href="about.html" class="top-level">About</a></li>
+			<li><a href="blog/index.html" class="top-level">Misc.</a>
 				<ul>
-					<li><a href="blog/travels.html" >Travel</a></li>
-					<li><a href="blog/achilles.html" >Achilles</a></li>
+					<li><a href="blog/travels.html" class="second-level">Travel</a></li>
+					<li><a href="blog/achilles.html" class="second-level">Achilles</a></li>
 				</ul>
 			</li>
-			<li><a href="contact.html" >Contact</a></li>
+			<li><a href="contact.html" class="top-level">Contact</a></li>
 		</ul>
 	</nav>
 	<div class="main">
 	<section>
-	<h2>Welcome</h2>
-<!-- 		<h2>Poland Sock Poem</h2>
-		<h3>AllOfTheSocks</h3>
-			<p>
-			All of my socks have toes<br/>
-			Nine of my socks are differently colored<br/>
-			Eight of my socks makes half as many pairs<br/>
-			Seven of my socks i forgot to pack<br/>
-			Six of my socks are leopards and zebras<br/>
-			Five of my socks might have holes<br/>
-			Four of my socks are wet<br/>
-			Three of my socks are lost<br/>
-			Two of my socks are green<br/>
-			One of my socks feels like the desert inside<br/>
-			None of my socks are clean
-		</p> -->
+		<div class="index-top">
+			<div class='index-face'>
+				<img src="imgs/meSquare.png" />
+			</div>
+			<div class='index-blurb'>
+				<p>
+					I am a fullstack developer located in New York City. My experience lies primarily in Ruby on Rails but I have dabbled in Python/Django and am always looking for something new to learn.
+				</p>
+				<p>Have a look around to learn <span><a href="about.html">more about me</a></span>.</p>
+			</div>
+		</div>
+		<div class='index-icons'>
+			<div class='index-icon'>
+				<div class='index-icon-pic'>
+					<img src="imgs/database1.png">
+				</div>
+				<h6>Languages</h6>
+				<p>Ruby</p>
+				<p>Python</p>
+				<p>Javascript</p>
+			</div><div class='index-icon'>
+				<div class='index-icon-pic'>
+					<img src="imgs/frameworks2.png">
+				</div>
+				<h6>Frameworks</h6>
+				<p>Rails</p>
+				<p>Django</p>
+				<p>Sinastra</p>
+			</div><div class='index-icon'>
+				<div class='index-icon-pic'>
+					<img src="imgs/frameworks1.png">
+				</div>
+				<h6>Databases</h6>
+				<p>MySQL</p>
+				<p>PostgreSQL</p>
+				<p>Third</p>
+			</div>
+		</div>
 	</section> 
 	<aside>
 		<div>
@@ -68,32 +90,8 @@
 	</aside>
 	</div>
 	<footer>
-		<!-- <div class="left-foot"> -->
-			<a href="index.html">
-				<img src="imgs/me2.png" />
-			</a>
-		<!-- </div> -->
-		<!-- <div class="right-foot"> -->
-		<table>
-			<tr>
-				<td><a href="projects/index.html" >Projects</a></td>
-				<td><a href="https://github.com/juli212">GitHub</a></td>
-				<td><a href="#">LinkdIn</a></td>
-			</tr>
-			<tr>
-				<td><a href="about.html" >About Me</a></td>
-				<td><a href="contact.html" >Contact</a></td>
-				<td><a href="#"></a></td>
-			</tr>
-			<tr>
-				<td><a href="blog/index.html" >Blog</a></td>
-				<td><a href="#"></a></td>
-				<td><a href="#"></a></td>
-			</tr>	 		
-		</table>
-			<hr>
-			<p>&copy; 2016</p>
-		<!-- </div> -->
+		<div class='foot-line'></div>
+		<p>JG &copy; 2017</p>
 	</footer>
 </body>
 </html>
