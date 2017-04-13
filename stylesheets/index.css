@@ -8,38 +8,37 @@ section h2 {
 }
 
 .index-face {
+	float: left;
 	position: relative;
-	width: 150px;
+	width: 100px;
 	margin: 0 auto;
 }
 
 .index-face img {
 	width: 90%;
 	height: auto;
-	margin: 0px 5%;
+	margin: 0px 5% 10px;
 	border-radius: 50% 10% 50% 40%;
 }
 
 .index-blurb {
 	position: relative;
+	margin-top: 30px;
+	margin-left: 80px;
+	font-size: 20px;
 }
 
 @media only screen and (min-width: 600px) {
 	.index-face {
-		float: left;
-	}
-	.inline-face {
-		margin: 0px 5% 10px;
+		width: 140px;
 	}
 
 	.index-blurb {
-		margin-top: 30px;
-		margin-left: 140px;
-		font-size: 20px;
+		margin-left: 120px;
 	}
 }
 
-.index-icons {
+.index-info {
 	clear: both;
 	width: 100%;
 	max-width: 600px;
@@ -57,8 +56,8 @@ section h2 {
 }
 
 .index-icon-pic {
-	width: 70px;
-	height: 70px;
+	width: 50px;
+	height: 50px;
 	position: relative;
 	margin: 0 auto;
 	background-color: white;
@@ -67,13 +66,14 @@ section h2 {
 
 .index-icon-pic img {
 	position: relative;
-	width: 40px;
-	margin: 15px;
+	width: 30px;
+	margin: 10px;
+	border-radius: 30%;
 }
 
 .index-icon-pic:hover img {
-	width: 50px;
-	margin: 10px;
+	width: 40px;
+	margin: 5px;
 }
 
 .index-icon h6 {
@@ -84,5 +84,33 @@ section h2 {
 
 .index-icon p {
 	margin: 0;
+	color: #4d4d4d;
 	font-size: 14px;
+}
+
+.index-links {
+	margin-bottom: 10px;
+}
+
+.index-links div {
+	display: block;
+	width: 80%;
+	margin: 0 10%;
+	text-align: center;
+	/*border-bottom: 1px solid #4d4d4d;*/
+	border-bottom: 1px solid #4d4d4d;
+	padding: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+	.index-links div {
+		width: 60%;
+		margin: 0 20%;
+	}
+}
+
+.index-links div a {
+	font-size: 20px;
+	text-decoration: none;
+	color: #cc0000;
 }

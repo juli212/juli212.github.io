@@ -22,18 +22,31 @@ header {
 	position: relative;
 	margin: 0;
 	background-color: rgba(169, 169, 169, 0.7);
-	height: 160px;
-	width: 100%; 
+	height: 80px;
+	width: 100%;
+	overflow: hidden;
 }
 
 header img {
-	width: 1200px;
-	max-width: 100%;
+	width: 600px;
+	position: absolute;
+	right: 0;
+	/*max-width: 100%;*/
 	height: auto;
-	height: 160px;
+	height: 80px;
 	display: block;
 	margin: 0 auto;
 } 	
+
+@media only screen and (min-width: 600px) {
+	header{
+		height: 160px
+	}
+	header img {
+		height: 160px;
+		width: 1200px;
+	}
+}
 
 h1 {
 	font-size: 140px;
@@ -107,7 +120,8 @@ nav ul {
 
 nav ul li {
 	display: inline-block;
-	width: 20%;
+	/*width: 20%;*/
+	width: 22%;
 	height: 40px;
 	margin: 0px -2.5px;
 	position: relative;
@@ -165,7 +179,9 @@ nav ul ul li a {
 		font-size: 14px;
 	}
 	nav ul li {
-		width: 18%;
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+		/*width: 18%;*/
 		height: 24px;
 	}
 	nav ul li a {
@@ -203,7 +219,6 @@ section {
 }
 
 section h2 {
-	margin-left: 60px;
 	font-size: 40px;
 }
 
@@ -283,7 +298,8 @@ footer {
 	width: 100%;
 	height: 40px;
 	margin: 0 auto;
-	background-color: #A9A9A9;
+	background-color: #666666;
+	/*background-color: #A9A9A9;*/
 	clear: both; 
 	position: absolute;
 	bottom: 0;
@@ -296,8 +312,8 @@ footer .foot-line {
 	width: 90%;
 	margin: 18px 0 0 5%;
 	height: 2px;
-	border-top: 1px solid rgba(204, 0 , 0, 0.3);
-	border-bottom: 1px solid rgba(204, 0 , 0, 0.5);
+	border-bottom: 1px solid white;
+	border-top: 1px solid #D3D3D3;
 }
 
 footer p {
@@ -305,8 +321,8 @@ footer p {
 	top: -12px;
 	margin: 0 auto;
 	display: block;
-	color: #cc0000;
-	background-color: #A9A9A9;
+	color: white;
+	background-color: #666666;
 	text-align: center;
 	width: 10%;
 	font-size: 10px;
