@@ -1,3 +1,36 @@
+.scroll-header {
+	position: fixed;
+	background-color: #F0F0F0;
+}
+
+.scroll-nav {
+	position: fixed;
+	margin-top: 80px;
+	background-color: #F0F0F0;
+}
+
+.scroll-body {
+	margin-top: 120px;
+}
+aside.scroll-body {
+	margin-top: 0;
+}
+@media only screen and (min-width: 600px) {
+	.scroll-nav {
+		margin-top: 160px;
+	}
+
+	.scroll-body {
+		margin-top: 180px;
+	}
+	aside.scroll-body {
+		right: 0;
+		top: 188px;
+		height: auto;
+		position: fixed;
+	}
+}
+
 html {
 	height: 100%;
 	margin: 0 auto;
@@ -17,7 +50,6 @@ body {
 	font-family: sans-serif;
 }
 
-
 header {
 	position: relative;
 	margin: 0;
@@ -25,6 +57,7 @@ header {
 	height: 80px;
 	width: 100%;
 	overflow: hidden;
+	z-index: 5;
 }
 
 header img {
@@ -104,6 +137,8 @@ nav {
 	border-radius: 1px;
 	width: 100%;
 	margin: 0 auto; 
+	/*margin-top: 160px;*/
+	z-index: 5;
 }
 nav a {
 	text-decoration: none;
@@ -244,8 +279,8 @@ aside {
 	width: 100%;
 	min-width: 100px;
 	padding: 0px;
-	background-color: #D3D3D3;
 	margin: 0px;
+	background-color: #D3D3D3;
 }
 aside div {
 	width: 49%;
@@ -254,6 +289,7 @@ aside div {
 	top: 0px;
 	margin: 0px 0px;
 	padding: 15px 0px;
+	/*background-color: #D3D3D3;*/
 }
 
 aside a {
@@ -284,12 +320,14 @@ aside a:hover img {
 		border: none;
 		width: 16%;
 		float: right;
+		background-color: #F0F0F0;
 	}
 
 	aside div {
 		width: 100%;
 		padding: 30px 0px;
 		border: none;
+		background-color: #D3D3D3;
 	}
 }
 

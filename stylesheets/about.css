@@ -67,8 +67,8 @@ article h3 {
 }
 
 .new-box div {
-	width: 144px;
-	height: 144px;
+	width: 90px;
+	height: 90px;
 	padding: 0;
 	position: relative;
 	margin: 0 auto;
@@ -101,13 +101,3 @@ article h3 {
 	left: -28px;
 	font-size: 10px;
 }
-
-/*@media only screen and (min-width: 600px) {
-	.new-box {
-		padding-left: 1%;
-	}
-	.new-box div {
-		max-width: 24%;
-		margin: 0px;
-	}
-}*/
