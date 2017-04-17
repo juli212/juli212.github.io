@@ -1,35 +1,3 @@
-.scroll-header {
-	position: fixed;
-	background-color: #F0F0F0;
-}
-
-.scroll-nav {
-	position: fixed;
-	margin-top: 80px;
-	background-color: #F0F0F0;
-}
-
-.scroll-body {
-	margin-top: 120px;
-}
-aside.scroll-body {
-	margin-top: 0;
-}
-@media only screen and (min-width: 600px) {
-	.scroll-nav {
-		margin-top: 160px;
-	}
-
-	.scroll-body {
-		margin-top: 188px;
-	}
-	aside.scroll-body {
-		right: 0;
-		top: 188px;
-		height: auto;
-		position: fixed;
-	}
-}
 
 html {
 	height: 100%;
@@ -56,6 +24,7 @@ header {
 	background-color: rgba(169, 169, 169, 0.7);
 	height: 80px;
 	width: 100%;
+	max-width: 1200px;
 	overflow: hidden;
 	z-index: 5;
 }
@@ -121,6 +90,7 @@ nav {
 	position: relative;
 	border-radius: 1px;
 	width: 100%;
+	max-width: 984px;
 	margin: 0 auto; 
 	z-index: 5;
 }
@@ -303,6 +273,7 @@ aside a:hover img {
 	aside {
 		border: none;
 		width: 16%;
+		max-width: 192px;
 		float: right;
 		background-color: #F0F0F0;
 	}
@@ -357,4 +328,44 @@ footer p {
 
 .highlighted {
 	background-color: #D3D3D3;
+}
+
+.scroll-header {
+	position: fixed;
+	background-color: #F0F0F0;
+}
+
+.scroll-nav {
+	position: fixed;
+	margin-top: 80px;
+	background-color: #F0F0F0;
+}
+
+.scroll-body {
+	margin-top: 108px;
+}
+aside.scroll-body {
+	margin-top: 0;
+}
+@media only screen and (min-width: 600px) {
+	.scroll-nav {
+		margin-top: 160px;
+	}
+
+	.scroll-body {
+		margin-top: 188px;
+	}
+	aside.scroll-body {
+		right: 0;
+		top: 188px;
+		/*height: auto;*/
+		position: fixed;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	aside.scroll-body {
+		right: auto;
+		margin-left: 1008px;
+	}
 }
