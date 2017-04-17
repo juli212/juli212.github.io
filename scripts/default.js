@@ -4,7 +4,6 @@ $(document).ready(function () {
   $('nav a').each(function () {
     var linkPage = this.href;
     if (activePage == linkPage) {
-      	// debugger;
      	if ($(this).hasClass('top-level')) {
         $(this).closest("li").addClass("highlighted");
       } else if ($(this).hasClass('second-level')) {

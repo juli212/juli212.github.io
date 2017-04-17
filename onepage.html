@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="scripts/onepage.js"></script>
+	<script src="scripts/pictures.js"></script>
+	<title>Welcome | Julia Giraldi</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="imgs/titlepic.png" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/onepage_default.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/list.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/onepage_index.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/about.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/contact.css">
+</head>
+
+<body  class='onepage-body'>
+	<div id="screen-hide"></div>
+	<header>
+		<div>
+			<img src="imgs/subwaybw.png" />
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html" id="index" class="top-level">Home</a></li>
+			<li><a href="projects/index.html" id="projects" class="top-level">Projects</a></li>
+			<li><a href="about.html" id="about" class="top-level">About</a></li>
+			<li><a href="contact.html" id="contact" class="top-level">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="main">
+	<section>
+		<div class="onepage-index">
+			<div class='index-face'>
+				<img src="imgs/meSquare.png" />
+			</div>
+			<div class='index-blurb'>
+				<p>
+					I am a fullstack developer located in New York City. My experience lies primarily in Ruby on Rails but I have dabbled in Python/Django and am always looking for something new to learn.
+				</p>
+				<p>Have a look around to learn <span><a href="about.html">more about me</a></span>.</p>
+			</div>
+			<div class='index-info'>
+				<div class='index-icon'>
+					<div class='index-icon-pic'>
+						<img src="imgs/languages.png">
+					</div>
+					<h6>Languages</h6>
+					<p>Ruby</p>
+					<p>Python</p>
+					<p>Javascript</p>
+				</div><div class='index-icon'>
+					<div class='index-icon-pic'>
+						<img src="imgs/database1.png">
+					</div>
+					<h6>Databases</h6>
+					<p>MySQL</p>
+					<p>PostgreSQL</p>
+				</div><div class='index-icon'>
+					<div class='index-icon-pic'>
+						<img src="imgs/frameworks1.png">
+					</div>
+					<h6>Frameworks</h6>
+					<p>Rails</p>
+					<p>Django</p>
+					<p>Sinastra</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="onepage-projects">
+			<h2>My Projects!</h2>
+			<ul>
+				<li><a href="pubgamer.html" >PubGamer</a> March 2017</li>
+				<li><a href="littlefoot.html" >LittleFoot</a> May 2016</li>
+				<li><a href="theresaboard.html" >There's A Board!</a> May 2016</li>
+			</ul>
+		</div>
+
+		<div class="onepage-about">
+			<h3>Here I Am</h3>
+		<div class="aboutme">
+			<p>
+				I am a New York City native who grew up riding the subway and playing soccer. After graduating from Syracuse University in 2013, I spent 18 months living in over 20 countries across three continents before coming home to NYC and working at a non-profit. Summer 2015 gave me an opportunity to spend the summer managing the only hostel on Nantucket Island before returning to NYC to delve passionately into coding.
+			</p>
+		</div>
+		<article>
+			<h3> Things I like</h3>
+			<div class="new-box">
+				<div id="picture-box"></div>
+				<div>
+					<img src="imgs/cat.png" />
+					<p>CAT-SITTING</p>
+				</div>
+				<div>
+					<img src="imgs/soccer.png" />
+					<p>SOCCER</p>
+				</div>
+				<div>
+					<img src="imgs/camping.png" />
+					<p>CAMPING</p>
+				</div>
+				<div>
+					<img src="imgs/igloo.png" />
+					<p>IGLOOS</p>
+				</div>
+				<div>
+					<img src="imgs/triangle.png" />
+					<p>TRIANGLES</p>
+				</div>
+				<div>
+					<img src="imgs/beer.jpg" />
+					<p>BEER</p>
+				</div>
+				<div>
+					<img src="imgs/pool.png" />
+					<p>POOL</p>
+				</div>
+				<div>
+					<img src="imgs/books.png" />
+					<p>READING</p>
+				</div>
+				<div>
+					<img src="imgs/soup.png" />
+					<p>SOUP!</p>
+				</div>
+				<div>
+					<img src="imgs/desertcamp.png" />
+					<p>THE DESERT</p>
+				</div>
+				<div>
+					<img src="imgs/halloween.png" />
+					<p>HALLOWEEN</p>
+				</div>
+				<div>
+					<img src="imgs/me2.png" />
+					<p>HIKING</p>
+				</div>
+				<div>
+					<img src="imgs/hiking.png" />
+					<p>PRETTY NATURE</p>
+				</div>
+				<div>
+					<img src="imgs/skiing.png" />
+					<p>SKIING</p>
+				</div>
+				<div>
+					<img src="imgs/beach.png" />
+					<p>BEACH!</p>
+				</div>
+				<div>
+					<img src="imgs/boardgame.png" />
+					<p>BOARDGAMES</p>
+				</div>
+				<div>
+					<img src="imgs/cardboard.png" />
+					<p>ROBOT FIGHTS</p>
+				</div>
+			</div>
+		</article>
+		</div>
+
+		<div class="onepage-contact">
+			<h2>Contact Me!</h2>
+			<form name="gform" id="contact-form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScGW4eaQnzaTs8bBzQAnopQ8X0UQn5HXXFFjAizwR0mTyJf5g/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+				<input placeholder="Name" type="text" tabindex="1" name="entry.961398389" id="entry.961398389" required="true"><input placeholder="Email" type="email" tabindex="2" name="entry.1628368173" id="entry.1628368173" required="true">
+				<textarea placeholder="Message" type="text" tabindex="3" name="entry.541258476" id="entry.541258476" required="true"></textarea>
+				<button name="submit" type="submit" value="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+			</form>
+			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+		</div>
+	</section> 
+	<aside>
+		<div>
+			<a href="https://github.com/juli212" title="GitHub"><img src="imgs/github6red.png" /></a>
+		</div>
+		<div>
+			<a href="#" title="Linkedin"><img src="imgs/linkedin3red.png" /></a>
+		</div>
+	</aside>
+	</div>
+	<footer>
+		<div class='foot-line'></div>
+		<p>JG &copy; 2017</p>
+	</footer>
+</body>
+</html>

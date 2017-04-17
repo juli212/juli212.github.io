@@ -1,0 +1,317 @@
+
+html {
+	height: 100%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+body {
+	background-color: #F0F0F0;
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	min-width: 300px;
+	min-height: 100%;
+	margin: auto;
+	padding: 0;
+	display: block;
+	font-family: sans-serif;
+}
+
+header {
+	position: fixed;
+	/*position: relative;*/
+	margin: 0;
+	background-color: rgba(169, 169, 169, 1);
+	height: 80px;
+	width: 100%;
+	max-width: 1200px;
+	overflow: hidden;
+	z-index: 5;
+}
+
+header img {
+	width: 600px;
+	position: absolute;
+	right: 0;
+	height: auto;
+	height: 80px;
+	display: block;
+	margin: 0 auto;
+} 	
+
+@media only screen and (min-width: 600px) {
+	header{
+		height: 160px
+	}
+	header img {
+		height: 160px;
+		width: 1200px;
+	}
+}
+
+h2 {
+	font-size: 40px;
+	color: #cc0000;
+	text-align: center;
+	padding: 5px;
+	margin: 0px;
+}
+
+h3 {
+	margin-left: 20px;
+	color: #cc0000;
+}
+
+h4{
+	margin-left: 100px;
+	font-size: 20px;
+	color: #cc0000;
+}
+
+h5 {
+	font-size: 22px;
+	color: #cc0000;
+	font-weight: bold;
+	position: absolute;
+	top: 100px;
+	left: 20%;
+}
+@media only screen and (min-width: 600px) {
+/*	h1 {
+		left: 30%;
+	}
+	
+	h5 {
+		left: 50%;
+	}*/
+}
+nav { 
+	position: fixed;
+	/*position: relative;*/
+	border-radius: 1px;
+	width: 100%;
+	max-width: 1200px;
+	/*max-width: 984px;*/
+	margin: 80px auto 0px; 
+	/*margin-top: 80px;*/
+	background-color: #F0F0F0;
+	z-index: 5;
+}
+nav a {
+	text-decoration: none;
+} 
+nav ul {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	margin: 0px;
+	font-size: 12px;
+	padding: 4px 0px 0px;
+}
+
+nav ul li {
+	display: inline-block;
+	width: 24%;
+	height: 40px;
+	margin: 0px -2.5px;
+	position: relative;
+}
+
+nav ul li:last-of-type {
+	border-right: none;
+}
+
+nav ul li a {
+	display: block;
+	color: #cc0000;
+	padding: 13px 0px;
+}
+nav ul li:hover {
+	background-color: #A9A9A9;
+}
+nav ul ul {
+	position: absolute;
+	margin: 0px;
+	z-index: 1;
+	display: none;
+	padding: 0px;
+	font-weight: normal
+	width: 100%;
+}
+nav ul li:hover ul {
+	display: block;
+	font-weight: normal; 
+}
+nav ul ul li {
+	 position: relative;
+	 display: block;
+	 border-left: none;
+	 border-right: none;
+	 border-bottom: 1px solid #cc0000;
+	 background-color: white;
+	 width: 100%;
+	 font-weight: normal;
+	 height: 40px;
+	 padding: 3px 0px;
+}
+
+nav ul ul li a {
+	padding: 13px 0px;
+}
+
+@media only screen and (min-width: 600px) {
+	nav {
+		/*width: 82%;*/
+		margin: 0;
+		margin-top: 160px;
+	}
+	nav ul {
+		height: 24px;
+		font-weight: bold;
+		font-size: 14px;
+	}
+	nav ul li {
+		border-top-left-radius: 2px;
+		border-top-right-radius: 2px;
+		height: 24px;
+	}
+	nav ul li a {
+		padding: 3px 0px;
+	}
+
+	nav ul ul {
+		min-width: 110%;
+		left: -5%;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+
+	nav ul ul li {
+		height: 30px;
+	}
+}
+
+.main {
+	position: relative;
+	margin-bottom: 40px;
+	display: inline-block;
+	width: 100%;
+	margin-top: 108px;
+}
+
+section {
+	width: 100%;
+	min-height: 208px;
+	padding: 10px 0px;
+	margin: 0px;
+	/*margin-top: 108px;*/
+	background-color: #D3D3D3;
+	position: relative;
+	overflow: hidden;
+	border-bottom: 3px solid #cc0000;
+}
+
+section p {
+	margin-left: 30px;
+	margin-right: 20px;
+	color: #cc0000;
+}
+
+section p a {
+	color: #cc0000;
+	font-weight: lighter;
+	font-style: italic;
+	text-decoration: none;
+}
+
+section p a:hover {
+	text-decoration: underline;
+}
+
+aside {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	min-width: 100px;
+	max-height: 228px;
+	padding: 0px;
+	margin: 0px;
+	background-color: #D3D3D3;
+}
+aside div {
+	width: 49%;
+	display: inline-block;
+	position: relative;
+	top: 0px;
+	margin: 0px 0px;
+	padding: 15px 0px;
+}
+
+aside a {
+	width: 50px;
+	margin: 0 auto;
+	display: block;
+}
+aside a img {
+	width: 90%;
+	margin: 5%;
+	display: block; 
+}
+
+aside a:hover img {
+	width: 100%;
+	margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+	.main {
+		margin-top: 188px;
+	}
+}
+
+
+footer {
+	width: 100%;
+	height: 40px;
+	margin: 0 auto;
+	background-color: #666666;
+	clear: both; 
+	position: absolute;
+	bottom: 0;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+footer .foot-line {
+	position: relative;
+	width: 90%;
+	margin: 18px 0 0 5%;
+	height: 2px;
+	border-bottom: 1px solid white;
+	border-top: 1px solid #D3D3D3;
+}
+
+footer p {
+	position: relative;
+	top: -12px;
+	margin: 0 auto;
+	display: block;
+	color: white;
+	background-color: #666666;
+	text-align: center;
+	width: 10%;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+	footer p {
+		top: -7;
+	}
+}
+
+.highlighted {
+	background-color: #D3D3D3;
+}
