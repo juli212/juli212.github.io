@@ -12,19 +12,4 @@ $(document).ready(function () {
       } 
     }
 	});
-
-  $(window).scroll(function(){
-    // var scrolled = $(window).scrollTop();
-    if ($(window).scrollTop() > 0 ) {
-      $('header').addClass('scroll-header')
-      $('nav').addClass('scroll-nav')
-      // $('aside').addClass('scroll-aside')
-      $('section, aside').addClass('scroll-body')
-    } else {
-      $('header').removeClass('scroll-header')
-      $('nav').removeClass('scroll-nav')
-      // $('aside').removeClass('scroll-aside')
-      $('section, aside').removeClass('scroll-body')
-    }
-  })
 });

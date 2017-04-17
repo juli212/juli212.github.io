@@ -19,9 +19,10 @@ body {
 }
 
 header {
-	position: relative;
+	position: fixed;
+	/*position: relative;*/
 	margin: 0;
-	background-color: rgba(169, 169, 169, 0.7);
+	background-color: rgba(169, 169, 169, 1);
 	height: 80px;
 	width: 100%;
 	max-width: 1200px;
@@ -33,7 +34,6 @@ header img {
 	width: 600px;
 	position: absolute;
 	right: 0;
-	/*max-width: 100%;*/
 	height: auto;
 	height: 80px;
 	display: block;
@@ -87,11 +87,14 @@ h5 {
 	}
 }
 nav { 
-	position: relative;
+	position: fixed;
+	/*position: relative;*/
 	border-radius: 1px;
 	width: 100%;
 	max-width: 984px;
-	margin: 0 auto; 
+	margin: 80px auto 0px; 
+	/*margin-top: 80px;*/
+	background-color: #F0F0F0;
 	z-index: 5;
 }
 nav a {
@@ -161,6 +164,7 @@ nav ul ul li a {
 	nav {
 		width: 82%;
 		margin: 0;
+		margin-top: 160px;
 	}
 	nav ul {
 		height: 24px;
@@ -193,6 +197,7 @@ nav ul ul li a {
 	margin-bottom: 40px;
 	display: inline-block;
 	width: 100%;
+	margin-top: 108px;
 }
 
 section {
@@ -200,14 +205,11 @@ section {
 	min-height: 208px;
 	padding: 10px 0px;
 	margin: 0px;
+	/*margin-top: 108px;*/
 	background-color: #D3D3D3;
 	position: relative;
 	overflow: hidden;
 	border-bottom: 3px solid #cc0000;
-}
-
-section h2 {
-	font-size: 40px;
 }
 
 section p {
@@ -232,6 +234,7 @@ aside {
 	bottom: 0;
 	width: 100%;
 	min-width: 100px;
+	max-height: 228px;
 	padding: 0px;
 	margin: 0px;
 	background-color: #D3D3D3;
@@ -243,7 +246,6 @@ aside div {
 	top: 0px;
 	margin: 0px 0px;
 	padding: 15px 0px;
-	/*background-color: #D3D3D3;*/
 }
 
 aside a {
@@ -263,6 +265,10 @@ aside a:hover img {
 }
 
 @media only screen and (min-width: 600px) {
+	.main {
+		margin-top: 188px;
+	}
+
 	section {
 		border: none;
 		width: 82%;
@@ -272,9 +278,11 @@ aside a:hover img {
 
 	aside {
 		border: none;
+		position: fixed;
+		top: 188px;
+		right: 0;
 		width: 16%;
 		max-width: 192px;
-		float: right;
 		background-color: #F0F0F0;
 	}
 
@@ -283,6 +291,13 @@ aside a:hover img {
 		padding: 30px 0px;
 		border: none;
 		background-color: #D3D3D3;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	aside {
+		right: auto;
+		margin-left: 1008px;
 	}
 }
 
@@ -328,44 +343,4 @@ footer p {
 
 .highlighted {
 	background-color: #D3D3D3;
-}
-
-.scroll-header {
-	position: fixed;
-	background-color: #F0F0F0;
-}
-
-.scroll-nav {
-	position: fixed;
-	margin-top: 80px;
-	background-color: #F0F0F0;
-}
-
-.scroll-body {
-	margin-top: 108px;
-}
-aside.scroll-body {
-	margin-top: 0;
-}
-@media only screen and (min-width: 600px) {
-	.scroll-nav {
-		margin-top: 160px;
-	}
-
-	.scroll-body {
-		margin-top: 188px;
-	}
-	aside.scroll-body {
-		right: 0;
-		top: 188px;
-		/*height: auto;*/
-		position: fixed;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	aside.scroll-body {
-		right: auto;
-		margin-left: 1008px;
-	}
 }
