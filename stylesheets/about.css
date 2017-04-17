@@ -1,16 +1,8 @@
-section h2 {
-	margin: 0;
-}
-
 article {
 	width: 100%;
 	margin: 0px; 
 }
 
-article h2 {
-	margin: 0;
-	text-align: center;
-}
 article h3 {
 	margin: 40px 0px 15px;
 	text-align: center;
@@ -21,6 +13,7 @@ article h3 {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	max-width: 1200px;
 	height: 100%;
 	background-color: #666666;
 	opacity: 0.9;
@@ -64,7 +57,7 @@ article h3 {
 
 @media only screen and (min-width: 600px) {
 	#picture-box {
-		top: 15%;
+		top: 10%;
 		width: 50%;
 		left: 25%;
 	}

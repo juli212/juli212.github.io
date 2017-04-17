@@ -32,7 +32,7 @@ section form textarea {
 section form button {
 	width: 100px
 	height: 30px;
-	margin: 10px auto;
+	margin: 30px auto 10px;
 	padding: 10px;
 	border:none;
 	background-color: #A9A9A9;
