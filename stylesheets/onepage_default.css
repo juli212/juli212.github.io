@@ -20,11 +20,24 @@ body {
 
 .switch {
 	position: fixed;
-	width: 200px;
-	top: 0;
+	width: 180px;
+	top: 5px;
+	left: 0;
+	right: 0;
 	margin: 0 auto;
-	background-color: green;
+	background-color: rgba(169, 169, 169, 0.6);
 	z-index: 7;
+	text-align: center;
+	display: inline-block;
+}
+
+.switch a {
+	text-decoration: none;
+	color: #cc0000;
+	font-weight: bold;
+	border: 2px solid #cc0000;
+	display: block;
+	padding: 3px;
 }
 
 header {
@@ -86,7 +99,7 @@ h5 {
 	top: 100px;
 	left: 20%;
 }
-@media only screen and (min-width: 600px) {
+/*@media only screen and (min-width: 600px) {*/
 nav { 
 	position: fixed;
 	border-radius: 1px;
