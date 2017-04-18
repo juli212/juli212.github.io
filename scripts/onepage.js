@@ -1,7 +1,9 @@
 $(window).on('scroll load', function() {
 	var $sections = $('section').children('div');
+	var distScrolled = $(window).scrollTop()
   $sections.each(function() {
-    if($(window).scrollTop() >= $(this).position().top) {
+  	var distFromTop = $(this).position().top - 40
+    if(distScrolled >= distFromTop) {
       var section = "#" + this.className.replace('onepage-', '')
       var $navTab = $('nav').find(section).closest('li')
       if (!$navTab.hasClass('highlighted')) {
@@ -22,7 +24,7 @@ $(document).ready(function() {
 		$(this).closest('li').addClass('highlighted');
 		$("body").animate({
 			scrollTop: offsetNum},
-		 700)
+		 600)
 	})
 
 	$('#contact').on('submit', function(e) {
