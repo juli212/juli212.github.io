@@ -33,4 +33,33 @@ $(document).ready(function() {
 			scrollTop: offsetNum},
 		 600)
 	})
+
+	$('.new-box').on('click', 'div', function(){
+		var picLink = $(this).find('img').attr('src')
+		var label = $(this).find('p').text()
+		var picture = "<img src='" + picLink + "' />"
+		var pictureParagraph = picture + "<p>" + label + "</p>"
+		$('#picture-box').html(pictureParagraph)
+		toggleThings()
+	})
+	$('#screen-hide').on('click',function() {
+		toggleThings()
+	})
+
+	function toggleThings() {
+		$('#screen-hide, #picture-box').toggle()
+	}
+
+	$('#contact-form').on('submit', function(e) {
+		$('#contact-form').prepend('<p>message sent</p>');
+		$('#contact-form').fadeTo(5000, 0.1, function() {
+			document.getElementById('contact-form').reset();
+			$('#contact-form').fadeTo(3000, 1.0, function(){
+				setTimeout(function() {
+					$('#contact-form p').remove()
+				}, 2000);
+			})
+		})
+	});
 })
+var submitted=false;
