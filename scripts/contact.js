@@ -1,7 +1,11 @@
 $(document).ready(function () {
-	var submitted=false;
-	$('#contact').on('submit', function(e) {
-	  $('#contact-form *').fadeOut(2000);
-	  $('#contact-form').prepend('<p>Message sent!</p>');
+	$('#contact-form').on('submit', function(e) {
+		$('#contact-form').fadeTo("5000", 0.1, function() {
+			document.getElementById('contact-form').reset();
+			$('#contact-form').fadeTo("3000", 1.0, function(){
+				$('#contact-form').prepend('<p>message sent</p>');
+			})
+		})
 	});
 });
+var submitted=false;
