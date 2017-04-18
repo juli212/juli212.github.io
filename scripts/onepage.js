@@ -27,11 +27,12 @@ $(document).ready(function() {
 		 600)
 	})
 
-	$('#contact').on('submit', function(e) {
-	  $('#contact-form *').fadeOut(2000);
-	  $('#contact-form').prepend('<p>Message sent!</p>');
-	});
+	// $('#contact').on('submit', function(e) {
+	//   $('#contact-form *').fadeOut(2000);
+	//   $('#contact-form').prepend('<p>Message sent!</p>');
+	// });
 
+})
 	// $('body').on('click', '.switch', function(e) {
 	// 	e.preventDefault();
 	// 	var bodyClass = $(this).closest('body')[0].className
@@ -44,6 +45,4 @@ $(document).ready(function() {
 	// 	// debugger;
 	// })
 
-})
-
-var submitted=false;
+// var submitted=false;
