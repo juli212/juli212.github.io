@@ -73,14 +73,22 @@ article h3 {
 }
 
 .new-box div {
-	width: 90px;
-	height: 90px;
+	width: 65px;
+	height: 65px;
 	padding: 0;
 	position: relative;
 	margin: 0 auto;
-	margin: 5px;
+	margin: 2px;
 	display: inline-block;
 	overflow: hidden;
+}
+
+@media only screen and (min-width: 600px) {
+	.new-box div {
+		width: 80px;
+		height: 80px;
+		margin: 5px;
+	}
 }
 
 .new-box img {

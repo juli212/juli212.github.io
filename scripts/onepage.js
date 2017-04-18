@@ -29,6 +29,19 @@ $(document).ready(function() {
 	  $('#contact-form *').fadeOut(2000);
 	  $('#contact-form').prepend('<p>Message sent!</p>');
 	});
+
+	// $('body').on('click', '.switch', function(e) {
+	// 	e.preventDefault();
+	// 	var bodyClass = $(this).closest('body')[0].className
+	// 	if ( bodyClass == 'onepage-body') {
+	// 		// make it multipage
+
+	// 	} else if ( bodyClass == 'multipage-body') {
+	// 		// make it onepage
+	// 	}
+	// 	// debugger;
+	// })
+
 })
 
 var submitted=false;
