@@ -1,17 +1,24 @@
 $(window).on('scroll load', function() {
 	var $sections = $('section').children('div');
 	var distScrolled = $(window).scrollTop()
-  $sections.each(function() {
-  	var distFromTop = $(this).position().top - 40
-    if(distScrolled >= distFromTop) {
-      var section = "#" + this.className.replace('onepage-', '')
-      var $navTab = $('nav').find(section).closest('li')
-      if (!$navTab.hasClass('highlighted')) {
+	var winHeight = $(window).height()
+	var bottomPos = $('aside').position().top + $('nav').height() + $('header').height()
+	if ( distScrolled + winHeight >= bottomPos) {
       	$('.highlighted').removeClass('highlighted')
-      	$navTab.addClass('highlighted')
+      	$('#contact').closest('li').addClass('highlighted')
+	} else {
+	  $sections.each(function() {
+	  	var distFromTop = $(this).position().top - 40
+	    if(distScrolled >= distFromTop) {
+	      var section = "#" + this.className.replace('onepage-', '')
+	      var $navTab = $('nav').find(section).closest('li')
+	      if (!$navTab.hasClass('highlighted')) {
+	      	$('.highlighted').removeClass('highlighted')
+	      	$navTab.addClass('highlighted')
+	      }
       }
-    }
-  });
+    })
+  };
 });
 
 $(document).ready(function() {
@@ -26,23 +33,4 @@ $(document).ready(function() {
 			scrollTop: offsetNum},
 		 600)
 	})
-
-	// $('#contact').on('submit', function(e) {
-	//   $('#contact-form *').fadeOut(2000);
-	//   $('#contact-form').prepend('<p>Message sent!</p>');
-	// });
-
 })
-	// $('body').on('click', '.switch', function(e) {
-	// 	e.preventDefault();
-	// 	var bodyClass = $(this).closest('body')[0].className
-	// 	if ( bodyClass == 'onepage-body') {
-	// 		// make it multipage
-
-	// 	} else if ( bodyClass == 'multipage-body') {
-	// 		// make it onepage
-	// 	}
-	// 	// debugger;
-	// })
-
-// var submitted=false;

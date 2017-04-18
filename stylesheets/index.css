@@ -1,5 +1,6 @@
 .index-info {
 	clear: both;
+	min-width: 425px;
 	width: 100%;
 	display: inline-block;
 	max-width: 600px;
