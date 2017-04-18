@@ -29,6 +29,11 @@ section form textarea {
 	padding: 1% 2%;
 	border-radius: 2px;
 }
+
+section form p {
+	text-align: center;
+}
+
 section form button {
 	width: 100px
 	height: 30px;

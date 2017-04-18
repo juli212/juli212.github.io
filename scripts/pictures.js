@@ -1,7 +1,6 @@
 $(document).ready(function () {
 	$('.new-box').on('click', 'div', function(){
 		var picLink = $(this).find('img').attr('src')
-		// debugger;
 		var label = $(this).find('p').text()
 		var picture = "<img src='" + picLink + "' />"
 		var pictureParagraph = picture + "<p>" + label + "</p>"
