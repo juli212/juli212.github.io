@@ -55,6 +55,7 @@ article h3 {
 	background-color: #D3D3D3;
 }
 
+
 @media only screen and (min-width: 600px) {
 	#picture-box {
 		top: 10%;
@@ -114,4 +115,22 @@ article h3 {
 	bottom: -10px;
 	left: -28px;
 	font-size: 10px;
+}
+
+.onepage-about .arrow {
+	z-index: 10;
+	width: 60px;
+	height: 60px;
+	top: 200px;
+	position: absolute;
+	background-color: rgba(169, 169, 169, 0.3);
+	border-radius: 3px;
+}
+
+.arrow-left {
+	left: 0;
+}
+
+.arrow-right {
+	right: 0;
 }
