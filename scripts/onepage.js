@@ -46,6 +46,20 @@ $(document).ready(function() {
 		toggleThings()
 	})
 
+	$('body').keyup(function(e){
+		var $nextPic
+		var $currentPic = $('.current-big')
+		if ($('#picture-box').is(':visible') && e.keyCode == 37 && $currentPic.prev().hasClass('small-pic') ) {
+			$nextPic = $currentPic.prev() 
+		} else if ($('#picture-box').is(':visible') && e.keyCode == 39 && $currentPic.next().hasClass('small-pic') ) {
+			$nextPic = $currentPic.next()
+		} else {
+			return
+		}
+		switchPic($currentPic, $nextPic)
+	});
+
+
 	$('.arrow').on('click', function(){
 		var $arrow = $(this)
 		var $currentPic = $('.current-big')
@@ -57,17 +71,8 @@ $(document).ready(function() {
 		} else {
 			return
 		}
-		$currentPic.removeClass('current-big')
-		$nextPic.addClass('current-big')
-		var newSrc = $nextPic.find('img').attr('src')
-		var newLabel = $nextPic.find('p').text()
-		$('#picture-box #big-pic').attr('src', newSrc)
-		$('#picture-box p').text(newLabel)
+		switchPic($currentPic, $nextPic)
 	})
-
-	function toggleThings() {
-		$('#screen-hide, #picture-box').toggle()
-	}
 
 	$('#contact-form').on('submit', function(e) {
 		$('#contact-form').prepend('<p>message sent</p>');
@@ -80,5 +85,19 @@ $(document).ready(function() {
 			})
 		})
 	});
+	
+	function switchPic($currentPic, $nextPic) {
+		$currentPic.removeClass('current-big')
+		$nextPic.addClass('current-big')
+		var newSrc = $nextPic.find('img').attr('src')
+		var newLabel = $nextPic.find('p').text()
+		$('#picture-box #big-pic').attr('src', newSrc)
+		$('#picture-box p').text(newLabel)
+	}
+
+	function toggleThings() {
+		$('#screen-hide, #picture-box').toggle()
+	}
+
 })
 var submitted=false;
