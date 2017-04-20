@@ -32,9 +32,9 @@
 
 @media only screen and (min-width: 600px) {
 	.index-face {
-		margin-top: 70px;
 		float: left;
 		width: 160px;
+		margin-left: 2%;
 	}
 
 	.index-face img {

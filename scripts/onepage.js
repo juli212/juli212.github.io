@@ -34,16 +34,35 @@ $(document).ready(function() {
 		 600)
 	})
 
-	$('.new-box').on('click', 'div', function(){
+	$('.new-box').on('click', '.small-pic', function(){
+		$(this).addClass('current-big')
 		var picLink = $(this).find('img').attr('src')
 		var label = $(this).find('p').text()
-		var picture = "<img src='" + picLink + "' />"
-		var pictureParagraph = picture + "<p>" + label + "</p>"
-		$('#picture-box').html(pictureParagraph)
+		$('#picture-box #big-pic').attr('src', picLink)
+		$('#picture-box p').text(label)
 		toggleThings()
 	})
 	$('#screen-hide').on('click',function() {
 		toggleThings()
+	})
+
+	$('.arrow').on('click', function(){
+		var $arrow = $(this)
+		var $currentPic = $('.current-big')
+		var $nextPic
+		if ( $arrow.hasClass('arrow-left') && $currentPic.prev().hasClass('small-pic') ){
+			$nextPic = $currentPic.prev()
+		} else if ( $arrow.hasClass('arrow-right') && $currentPic.next().hasClass('small-pic') ){
+			$nextPic = $currentPic.next()
+		} else {
+			return
+		}
+		$currentPic.removeClass('current-big')
+		$nextPic.addClass('current-big')
+		var newSrc = $nextPic.find('img').attr('src')
+		var newLabel = $nextPic.find('p').text()
+		$('#picture-box #big-pic').attr('src', newSrc)
+		$('#picture-box p').text(newLabel)
 	})
 
 	function toggleThings() {
