@@ -48,12 +48,16 @@ $(document).ready(function() {
 		toggleThings()
 	})
 
-	$('body').keyup(function(e){
+	$('body').on('keyup', function(e){
 		var $nextPic
 		var $currentPic = $('.current-big')
-		if ($('#picture-box').is(':visible') && e.keyCode == 37 && $currentPic.prev().hasClass('small-pic') ) {
+		var picOpen = $('#picture-box').is(':visible')
+		if ( e.keyCode == 27 ) {
+			toggleThings()
+			return
+		} else if ( picOpen && e.keyCode == 37 && $currentPic.prev().hasClass('small-pic') ) {
 			$nextPic = $currentPic.prev() 
-		} else if ($('#picture-box').is(':visible') && e.keyCode == 39 && $currentPic.next().hasClass('small-pic') ) {
+		} else if ( picOpen && e.keyCode == 39 && $currentPic.next().hasClass('small-pic') ) {
 			$nextPic = $currentPic.next()
 		} else {
 			return
@@ -61,8 +65,21 @@ $(document).ready(function() {
 		switchPic($currentPic, $nextPic)
 	});
 
+	$('#picture-box').on('swipeleft swiperight', function(e) {
+		var $nextPic
+		var $currentPic = $('.current-big')
+		var picOpen = $('#picture-box').is(':visible')
+		if ( picOpen && e.type == 'swipeleft' && $currentPic.prev().hasClass('small-pic') ) {
+			$nextPic = $currentPic.prev()
+		} else if ( picOpen && e.type == 'swiperight' && $currentPic.next().hasClass('small-pic')) {
+			$nextPic = $currentPic.next()
+		} else {
+			return
+		}
+		switchPic($currentPic, $nextPic)
+	})
 
-	$('.arrow').on('click', function(){
+	$('#picture-box').on('click', '.arrow', function(){
 		var $arrow = $(this)
 		var $currentPic = $('.current-big')
 		var $nextPic
