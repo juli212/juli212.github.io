@@ -65,19 +65,36 @@ $(document).ready(function() {
 		switchPic($currentPic, $nextPic)
 	});
 
-	$('#picture-box').on('swipeleft swiperight', function(e) {
-		var $nextPic
-		var $currentPic = $('.current-big')
-		var picOpen = $('#picture-box').is(':visible')
-		if ( picOpen && e.type == 'swipeleft' && $currentPic.prev().hasClass('small-pic') ) {
-			$nextPic = $currentPic.prev()
-		} else if ( picOpen && e.type == 'swiperight' && $currentPic.next().hasClass('small-pic')) {
-			$nextPic = $currentPic.next()
-		} else {
-			return
+	$('#picture-box').swipe({
+		swipe: function(event, direction) {
+			var $nextPic
+			var $currentPic = $('.current-big')
+			var picOpen = $('#picture-box').is(':visible')
+			if ( picOpen && direction == 'right' && $currentPic.prev().hasClass('small-pic') ) {
+				$nextPic = $currentPic.prev()
+			} else if ( picOpen && direction == 'left' && $currentPic.next().hasClass('small-pic') ) {
+				$nextPic = $currentPic.next()
+			} else {
+				return
+			}
+			switchPic($currentPic, $nextPic)
 		}
-		switchPic($currentPic, $nextPic)
 	})
+	
+	
+// 	$('#picture-box').on('swipeLeft swipeRight', function(e) {
+// 		var $nextPic
+// 		var $currentPic = $('.current-big')
+// 		var picOpen = $('#picture-box').is(':visible')
+// 		if ( picOpen && e.type == 'swiperight' && $currentPic.prev().hasClass('small-pic') ) {
+// 			$nextPic = $currentPic.prev()
+// 		} else if ( picOpen && e.type == 'swipeleft' && $currentPic.next().hasClass('small-pic')) {
+// 			$nextPic = $currentPic.next()
+// 		} else {
+// 			return
+// 		}
+// 		switchPic($currentPic, $nextPic)
+//	 })
 
 	$('#picture-box').on('click', '.arrow', function(){
 		var $arrow = $(this)
