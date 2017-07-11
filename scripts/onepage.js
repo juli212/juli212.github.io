@@ -25,7 +25,6 @@ $(document).ready(function() {
 	loadPics($('.new-box'))
 
 	$('nav').on('click', 'a', function(e){
-		debugger;
 		e.preventDefault()
 		var clicked = ".onepage-" + this.id
 		var topHeight = $('header').height() + $('nav').height();
