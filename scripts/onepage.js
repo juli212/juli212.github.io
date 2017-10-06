@@ -31,7 +31,7 @@ $(document).ready(function() {
 		var offsetNum = $(clicked).offset().top - topHeight
 		$('.highlighted').removeClass('highlighted');
 		$(this).closest('li').addClass('highlighted');
-		$("body").animate({
+		$('html, body').animate({
 			scrollTop: offsetNum},
 		 600)
 	})
