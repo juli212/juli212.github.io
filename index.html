@@ -1,153 +1,139 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="http://labs.rampinteractive.co.uk/touchSwipe/jquery.touchSwipe.min.js"></script>
-	<script type="text/Javascript" src="scripts/onepage.js"></script>
-
-	<link rel="icon" href="imgs/titlepic.png" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/onepage_default.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/onepage_index.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/about.css">
-	<link rel="stylesheet" type="text/css" href="stylesheets/contact.css">
-	<title>Julia Giraldi</title>
-</head>
-
-<body class='onepage-body'>
-	<div id="screen-hide"></div>
-	<header>
-		<div>
-			<img src="imgs/subwaybw.png" />
-		</div>
-	</header>
-	<nav>
-		<ul>
-			<li><a href="index.html" id="index" class="top-level">Home</a></li>
-			<li><a href="projects/index.html" id="projects" class="top-level">Projects</a></li>
-			<li><a href="about.html" id="about" class="top-level">About</a></li>
-			<li><a href="contact.html" id="contact" class="top-level">Contact</a></li>
-		</ul>
-	</nav>
-	<div class="main">
-	<section>
-		<div class="onepage-index">
-			<div class='index-face'>
-				<img src="imgs/meSquare.png" />
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" href="imgs/titlepic.png">
+	</head>
+	<body>
+		<header>
+			<div class="header-icons">
+				<div class="header-icon">
+					<a href="https://www.linkedin.com/in/juli212/" title="LinkedIn" >
+						<img src="imgs/linkedin.png" >
+					</a>
+				</div>
+				<div class="header-icon">
+					<a href="https://github.com/juli212" title="Github" >
+						<img src="imgs/github.png" >
+					</a>
+				</div>
 			</div>
-			<div class='index-blurb'>
+			<h1>Julia Giraldi</h1>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</header>
+
+		<div class='outer'>
+		<div id="contain" class="container">
+
+			<div id="about" class="main one">
+				<h2>About</h2>
 				<p>
-					I am a fullstack developer located in New York City. My experience lies primarily in Ruby on Rails and Python/Django plus a lot of responsive design. I am always looking for something new to learn.
+					Greetings!
 				</p>
 				<p>
-					My current stack is built with Django, has a PostgreSQL database, and ReactJS on the frontend.
+					I am a fullstack developer located in New York City and am always looking for something new to learn.
+				</p>
+				<p>
+					My current stack is Python/Django, PostgreSQL, and ReactJS.
 				</p>
 			</div>
-			<div class='index-info'>
-				<div class='index-icon'>
-					<div class='index-icon-pic'>
-						<img src="imgs/languagesIcon.png">
+
+			<div id="skills" class="main two">
+				<h2>Skills</h2>	
+
+				<div class='skill-box'>
+					<div class='skill'>
+						<div class='icon-box'>
+							<img src="imgs/languages.png" />
+						</div>
+						<h6>Languages</h6>
+						<p>Ruby</p>
+						<p>Python</p>
+						<p>JavaScript</p>
 					</div>
-					<h6>Languages</h6>
-					<p>Ruby</p>
-					<p>Python</p>
-					<p>Javascript</p>
-				</div><div class='index-icon'>
-					<div class='index-icon-pic'>
-						<img src="imgs/databasesIcon.png">
+
+					<div class='skill'>
+						<div class='icon-box'>
+							<img src="imgs/databases.png" />
+						</div>
+						<h6>Databases</h6>
+						<p>MySQL</p>
+						<p>PostgreSQL</p>
 					</div>
-					<h6>Databases</h6>
-					<p>MySQL</p>
-					<p>PostgreSQL</p>
-				</div><div class='index-icon'>
-					<div class='index-icon-pic'>
-						<img src="imgs/frameworksIcon.png">
+
+					<div class='skill'>
+						<div class='icon-box'>
+							<img src="imgs/frameworks.png" />
+						</div>
+						<h6>Frameworks</h6>
+						<p>Rails</p>
+						<p>Django</p>
+						<p>ReactJS</p>
 					</div>
-					<h6>Frameworks</h6>
-					<p>Rails</p>
-					<p>Django</p>
-					<p>ReactJS</p>
 				</div>
+
 			</div>
+
+			<div id="portfolio" class="main three portfolio">
+				<h2>Portfolio</h2>
+
+				<div class='project-box'>
+					<div class='project'>
+						<div class='project-icon'>
+							<img src="imgs/octopus.png" />
+						</div>
+						<h6>PubGamer</h6>
+						<p>
+							User-powered tool for finding bars that host a variety of games for their customers. Users are able to review the venues in our database and host events at a particular venue of their choosing.
+						</p>
+						<p class='project-link'><a href="http://pub-gamer.herokuapp.com">PubGamer on Heroku</a></p>
+						<p class='project-link'><a href="https://github.com/juli212/pub_gamer">PubGamer on GitHub</a></p>
+					</div>
+
+					<div class='project'>
+						<div class='project-icon'>
+							<img src="imgs/board.png" />
+						</div>
+						<h6>There's A Board!</h6>
+						<p>
+							Web app to help DBC students schedule tutoring sessions amongst themselves either as tutors or tutees.
+						</p>
+						<p class='project-link'><a href="http://damp-tor-87542.herokuapp.com/">There's A Board! on Heroku</a></p>
+						<p class='project-link'><a href="https://github.com/juli212/Theres-A-Board">There's A Board! on GitHub</a></p>
+					</div>
+
+					<div class='project'>
+						<div class='project-icon'>
+							<img src="imgs/foot.png" />
+						</div>
+						<h6>LittleFoot</h6>
+						<p>
+							Day-to-day activity carbon footprint calculator. We created a daily quiz to help users become more aware of the little things they can do in their everyday lives in order to reduce the amount of carbon-waste they produce.
+						</p>
+						<p class='project-link'><a href="https://github.com/juli212/Little-Foot">LittleFoot on GitHub</a></p>
+					</div>
+				</div>
+
+			</div>
+			
+			<div id="contact" class="main four">
+				<h2>Contact</h2>
+				<p>jjgiraldi@gmail.com</p>
+			</div>
+
+			<footer>
+				<p>
+					&copy; 2017 JG
+				</p>
+			</footer>
+		</div>
 		</div>
 
-		<div class="onepage-projects">
-			<h2>Projects</h2>
-			<div>
-				<div class="onepage-project">
-					<div class="project-pic">
-						<img src="imgs/octopus.png" title="PubGamer">
-					</div>
-					<h6>PubGamer</h6>
-					<p>User-powered tool for finding bars that host a variety of games for their customers. Users are able to review the venues in our database and host events at a particular venue of their choosing.</p>
-					<p class='bottom'>View PubGamer on <span><a href="http://pub-gamer.herokuapp.com">Heroku</a></span> or <span><a href="https://github.com/juli212/pub_gamer">GitHub</a></span>.</p>
-				</div><div class="onepage-project">
-					<div class="project-pic">
-						<img src="imgs/board.png" title="There's A Board!">
-					</div>
-					<h6>There's A Board!</h6>
-					<p>Web app to help DBC students schedule tutoring sessions amongst themselves either as tutors or tutees.</p>
-					<p class="bottom">View There's A Board! on <span><a href="http://damp-tor-87542.herokuapp.com/">Heroku</a></span> or <span><a href="https://github.com/juli212/Theres-A-Board">GitHub</a></span>.</p>
-				</div><div class="onepage-project">
-					<div class="project-pic">
-						<img src="imgs/footSmaller.png" title="LittleFoot">
-					</div>
-					<h6>LittleFoot</h6>
-					<p>Day-to-day activity carbon footprint calculator. We created a daily quiz to help users become more aware of the little things they can do in their everyday lives in order to reduce the amount of carbon-waste they produce.</p>
-					<p class="bottom">View LittleFoot on <span><a href="https://github.com/juli212/Little-Foot">GitHub</a></span>.</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="onepage-about">
-			<h2>About</h2>
-		<div class="aboutme">
-			<p>
-				I am a New York City native who grew up riding the subway and playing soccer. After graduating from Syracuse University in 2013, I spent 18 months living in over 20 countries across three continents before coming home to NYC and working at a non-profit. Summer 2015 gave me an opportunity to spend the summer managing the only hostel on Nantucket Island before returning to NYC to delve passionately into coding.
-			</p>
-		</div>
-		<article>
-			<h3> Things I like</h3>
-			<div class="new-box">
-				<div id="picture-box">
-					<div class="arrow arrow-left">
-						<img src="imgs/arrow-left.png">
-					</div>
-					<div class="arrow arrow-right">
-						<img src="imgs/arrow-right.png">
-					</div>
-					<img src="" id="big-pic">
-					<p></p>
-				</div>
-			</div>
-		</article>
-		</div>
-
-		<div class="onepage-contact">
-			<h2>Contact</h2>
-			<form name="gform" id="contact-form" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScGW4eaQnzaTs8bBzQAnopQ8X0UQn5HXXFFjAizwR0mTyJf5g/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
-				<input placeholder="Name" type="text" tabindex="1" name="entry.961398389" id="entry.961398389" required="true"><input placeholder="Email" type="email" tabindex="2" name="entry.1628368173" id="entry.1628368173" required="true">
-				<textarea placeholder="Message" type="text" tabindex="3" name="entry.541258476" id="entry.541258476" required="true"></textarea>
-				<button name="submit" type="submit" value="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-			</form>
-			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-		</div>
-	</section> 
-	<aside>
-		<div>
-			<a href="https://github.com/juli212" title="GitHub"><img src="imgs/githubIcon.png" /></a>
-		</div>
-		<div>
-			<a href="https://www.linkedin.com/in/juli212/" title="Linkedin"><img src="imgs/linkedinIcon.png" /></a>
-		</div>
-	</aside>
-	</div>
-	<footer>
-		<div class='foot-line'></div>
-		<p>JG &copy; 2017</p>
-	</footer>
-</body>
+	</body>
 </html>
