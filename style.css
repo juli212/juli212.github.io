@@ -1,3 +1,11 @@
+/* COLORS:
+#6891D7 | 104,145,215
+#132D5C | 19,45,92
+#184C6B | 24,76,107
+#133A75 | 19,58,117
+#606875 | 96,104,117
+*/
+
 * {
 	text-align: center;
 	box-sizing: border-box;
@@ -58,15 +66,17 @@ header ul li {
 header ul li a {
 	text-decoration: none;
 	display: block;
-	padding: 10px 15px;
+	padding: 10px;
 	border: 1px dotted rgba(96,104,117, 0.15);
 	font-weight: bold;
+	background: rgba(96, 104, 117, 0.03);
 }
 
 header ul li a:hover {
 	color: rgba(96,104,117, 1);
 	border: 1px solid rgba(96,104,117, 0.5);
 	border-radius: 1px;
+	background: rgba(96, 104, 117, 0.01);
 }
 
 @media (min-width: 680px) {
@@ -82,11 +92,15 @@ header ul li a:hover {
 	header ul {
 		width: 55%;
 	}
+
+	header ul li a {
+		padding: 10px 15px;
+	}
 }
 
 body::after {
 	content: "";
-	background: url('imgs/desert.png') no-repeat fixed center;
+	background: url('imgs/swaybw.png') no-repeat fixed center;
 	background-size: cover;
 	opacity: 0.1;
 	top: 0;
