@@ -328,39 +328,130 @@ header:hover .header-icon img {
 /***************************************************/
 
 .project {
-	padding-top: 5px;
+	padding: 0;
 	vertical-align: top;
 	width: 100%;
+	max-width: 500px;
 	position: relative;
 	display: inline-block;
 	margin-bottom: 40px;
 	border-radius: 5px;
-	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.project:after {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.project .content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(19,58,117, 0.6);
 }
 
 .project h6 {
-	font-size: 18px;
-	margin: 5px 0;
+	font-size: 20px;
+	margin: 0;
+	padding: 5px 0;
+	color: rgb(24,76,107);
+	background-color: rgba(255, 255, 255, 0.3)
 }
 
 .project p {
-	padding: 0 10px;
+	padding: 20px 15px 10px;
 	margin: 5px auto;
+	position: relative;
+	font-size: 22px;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+}
+
+
+.p1 {
+	background: url('imgs/octopus.png') no-repeat center;
+	background-size: contain;
+}
+
+.p2 {
+	background: url('imgs/board.png') no-repeat center;
+	background-size: contain;
+}
+
+.p3 {
+	background: url('imgs/foot.png') no-repeat center;
+	background-size: contain;
+}
+
+.p1, .p2, .p3 {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.project-icons {
+	position: absolute;
+	width: 180px;
+	height: 60px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	padding: 0;
+	display: none;
 }
 
 .project-icon {
-	margin: 0 auto;
-	width: 90px;
-	height: 90px;
 	position: relative;
-	border-radius: 15%;
-	background-color: rgba(255, 255, 255, 0.3);
+	width: 60px;
+	height: 60px;
+	padding: 0;
+	margin: 0 10px;
+	display: inline-block;
+	border-radius: 1px;
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 50%;
+}
+
+.project-icon a {
+	position: relative;
+	display: block;
+	/*z-index: -1;*/
+	padding: 0;
+	margin: 0;
 }
 
 .project-icon img {
 	width: 100%;
 	height: 100%;
-	padding: 5px 10px;
+	padding: 0;
+}
+
+.project:hover {
+	background-op: transparent;
+}
+
+.project:hover .content {
+	background-color: rgba(19,58,117, 0.4);
+}
+
+.project:hover p {
+	display: inline-block;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.project:hover .project-icons {
+	display: block;
+}
+
+.project:hover .project-icon a {
+	/*z-index: 1;*/
+}
+
+.project-icon:hover {
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 @media (min-width: 1200px) {
