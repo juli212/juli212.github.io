@@ -31,6 +31,10 @@ body {
 	margin: 0;
 	position: relative;
 	z-index: 5;
+	background: url('imgs/subway20.png') no-repeat fixed center;
+	background-size: cover;
+	transition: background-image 5s linear;	
+	-webkit-transition: background-image 5s linear;
 }
 
 
@@ -41,6 +45,8 @@ header {
 	top: 0;
 	height: 100px;
 	width: 100%;
+	min-width: 320px;
+	max-width: 2400px;
 }
 
 header h1 {
@@ -98,24 +104,14 @@ header ul li a:hover {
 	}
 }
 
-body::after {
-	content: "";
-	opacity: 0.1;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;
-	background: url('imgs/swaybw.png') no-repeat fixed center;
-	background-size: cover;
-}
-
 footer {
 	grid-column: 1 / 3;
 	grid-row: 5;
 	background-color: rgba(104,145,215, 0.4);
 	border-bottom: 2px solid rgb(104, 145, 215);
+	width: 100%;
+	min-width: 320px;
+	max-width: 2400px;
 }
 
 footer p {
@@ -202,6 +198,9 @@ header:hover .header-icon img {
 /***************************************************/
 
 .main {
+	width: 100%;
+	min-width: 320px;
+	max-width: 2400px;
 	grid-column: 1;
 	grid-row: 1;
 	min-height: 100px;
@@ -330,11 +329,11 @@ header:hover .header-icon img {
 .project {
 	padding: 0;
 	vertical-align: top;
-	width: 100%;
+	width: 92%;
+	margin: 0 4% 40px;
 	max-width: 400px;
 	position: relative;
 	display: inline-block;
-	margin-bottom: 40px;
 	border-radius: 5px;
 }
 
@@ -427,7 +426,6 @@ header:hover .header-icon img {
 .project-icon a {
 	position: relative;
 	display: block;
-	/*z-index: -1;*/
 	padding: 0;
 	margin: 0;
 }
@@ -459,29 +457,19 @@ header:hover .header-icon img {
 	display: block;
 }
 
-.project:hover .project-icon a {
-	/*z-index: 1;*/
-}
-
 .project-icon:hover {
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
-@media (min-width: 1200px) {
-	.project {
-		width: 32%;
+@media (min-width: 680px) {
+	.project-box {
+		padding: 0 3% 0 20%;
 	}
 }
 
-.project-link {
-	margin: 5px 0;
-}
-
-.project-link a {
-	font-size: 18px;
-	text-decoration: none;
-}
-
-.project-link a:hover {
-	text-decoration: underline;
+@media (min-width: 1200px) {
+	.project {
+		margin: 0 0 40px;
+		width: 33%;
+	}
 }
