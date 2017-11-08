@@ -331,7 +331,7 @@ header:hover .header-icon img {
 	padding: 0;
 	vertical-align: top;
 	width: 100%;
-	max-width: 500px;
+	max-width: 400px;
 	position: relative;
 	display: inline-block;
 	margin-bottom: 40px;
@@ -352,6 +352,14 @@ header:hover .header-icon img {
 	background-color: rgba(19,58,117, 0.6);
 }
 
+.project .content .project-description {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
 .project h6 {
 	font-size: 20px;
 	margin: 0;
@@ -367,6 +375,7 @@ header:hover .header-icon img {
 	font-size: 22px;
 	font-weight: bold;
 	color: rgb(255, 255, 255);
+	display: inline-block;
 }
 
 
@@ -434,7 +443,7 @@ header:hover .header-icon img {
 }
 
 .project:hover .content {
-	background-color: rgba(19,58,117, 0.4);
+	background-color: rgba(19,58,117, 0.9);
 }
 
 .project:hover p {
