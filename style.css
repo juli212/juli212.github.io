@@ -466,28 +466,34 @@ header:hover .header-icon img {
 	padding: 0px;
 }
 
-.project:hover, .project.hover {
-	background-op: transparent;
+.project:hover,
+.project.hovered {
+	background-opacity: transparent;
 }
 
-.project:hover .content, .project.hover .content {
+.project:hover .content,
+.project.hovered .content {
 	background-color: rgba(19,58,117, 0.9);
 }
 
-.project:hover p, .project.hover p {
+.project:hover p,
+.project.hovered p {
 	display: inline-block;
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.project:hover h6, .project.hover h6 {
+.project:hover h6,
+.project.hovered h6 {
 	background-color: rgba(255, 255, 255, 0.8);
 }
 
-.project:hover .project-icons, .project.hover .project-icons {
+.project:hover .project-icons,
+.project.hovered .project-icons {
 	display: block;
 }
 
-.project:hover .project-bottom-icons, .project.hover .project-bottom-icons {
+.project:hover .project-bottom-icons,
+.project.hovered .project-bottom-icons {
 	display: block;
 }
 
