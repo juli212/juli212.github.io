@@ -4,8 +4,6 @@ $(document).ready(function() {
     $this = $(this).closest('.project')
     event = e.type
     hoverClasses = 'clickable hovered'
-    console.log(e.type)
-
     if ( event == 'touchstart' && !$this.hasClass(hoverClasses) ) {
       e.preventDefault()
       $this.toggleClass(hoverClasses)
