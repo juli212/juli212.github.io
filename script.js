@@ -32,4 +32,8 @@ $(document).ready(function() {
     }
   })
 
+  $('.project-icon, .bottom-icon').on('mouseenter mouseleave', function() {
+    $(this).toggleClass('icon-hover')
+  })
+
 })
