@@ -1,32 +1,45 @@
+const touchClasses = ['clickable', 'hovered']
+
 $(document).ready(function() {
 
   $('.project.taphover').on('touchstart mouseenter mouseleave click', function(e) {
-    $this = $(this).closest('.project')
-    event = e.type
-    hoverClasses = 'clickable hovered'
-    if ( event == 'touchstart' && !$this.hasClass(hoverClasses) ) {
-      e.preventDefault()
-      $this.toggleClass(hoverClasses)
-      return false
-    } else if (event == 'touchstart' && !($(e.target).closest('a.taphover').length > 0 )) {
-      $this.toggleClass(hoverClasses)
-      return false
-    } else if (event == 'touchstart') {
-      return true
+    const { target, type: event } = e
+    const removeByClasses = `.${touchClasses.join('.')}`
+    const classesToTogggle = touchClasses.join(' ')
+    $project = $(this).closest('.project')
+
+    // handle touch events inside project sections
+    if (event == 'touchstart') {
+      if (!$project.hasClass(classesToTogggle) ) {
+        e.preventDefault()
+        // remove click/hover classes from all elements that have them
+        $(removeByClasses).removeClass(classesToTogggle)
+        // add click/hover classes to current project
+        $project.toggleClass(classesToTogggle)
+        return
+      } else if (!($(target).closest('a.taphover').length > 0 )) {
+        // toggle click/hover classes
+        $project.toggleClass(classesToTogggle)
+        return
+      }
+      return
     }
 
+    // handle mouse hover start of project sections - add click/hover classes
     if (event == 'mouseenter') {
-      $this.addClass(hoverClasses)
-      return false
+      $project.addClass(classesToTogggle)
+      return
     }
+    // handle mouse hover end of project sections - remove click/hover classes
     if (event == 'mouseleave') {
-      $this.removeClass(hoverClasses)
-      return false
+      $project.removeClass(classesToTogggle)
+      return
     }
 
-    if (event == 'click' && !$this.hasClass(hoverClasses) ) {
-      $this.toggleClass(hoverClasses)
-      return false
+    // handle mouse click of project sections - toggle click/hover classes
+    if (event == 'click' && !$project.hasClass(classesToTogggle) ) {
+      $project.toggleClass(classesToTogggle)
+      return
     }
   })
 
