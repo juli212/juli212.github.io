@@ -10,8 +10,8 @@ $(document).ready(function() {
 
     // handle touch events inside project sections
     if (event == 'touchstart') {
+      e.preventDefault()
       if (!$project.hasClass(classesToTogggle) ) {
-        e.preventDefault()
         // remove click/hover classes from all elements that have them
         $(removeByClasses).removeClass(classesToTogggle)
         // add click/hover classes to current project
