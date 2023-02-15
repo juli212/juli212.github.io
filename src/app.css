@@ -31,7 +31,7 @@ body {
 	margin: 0;
 	position: relative;
 	z-index: 5;
-	background: url('imgs/backgrounds/desert10.png') no-repeat fixed center;
+	background: url('assets/backgrounds/desert10.png') no-repeat fixed center;
 	background-size: cover;
 }
 
@@ -349,6 +349,11 @@ header:hover .header-icon img {
 	position: relative;
 	display: inline-block;
 	border-radius: 4px;
+  border: none;
+  outline: none;
+  background: var(--background, 'transparent');
+  background-size: contain;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .project:after {
@@ -391,7 +396,9 @@ header:hover .header-icon img {
     border-bottom: 1px solid rgb(255, 242, 199);
 }
 
-.project.hovered .project-title,
+.project:focus .project-title,
+.project:active .project-title,
+.project:hover .project-title,
 .project:focus-within .project-title {
 	background-color: rgba(255, 255, 255, 0.8);
 	background-color: rgba(24,24,24, 0.9);
@@ -406,37 +413,6 @@ header:hover .header-icon img {
 	color: rgba(255, 255, 255, 0.8);
 	display: inline-block;
 }
-
-
-.p1 {
-	background: url('imgs/kitchen.png') no-repeat center;
-	background-size: contain;
-}
-
-.p2 {
-	background: url('imgs/octopus.png') no-repeat center;
-	background-size: contain;
-}
-
-.p3 {
-	background: url('imgs/board.png') no-repeat center;
-	background-size: contain;
-}
-
-.p4 {
-	background: url('imgs/foot.png') no-repeat center;
-	background-size: contain;
-}
-
-.p5 {
-	background: url('imgs/feetballNYC.png') no-repeat center;
-	background-size: contain;
-}
-
-.p1, .p2, .p5 {
-	background-color: rgba(255, 255, 255, 0.2);
-}
-
 
 .project-icons {
 	margin: auto 20px 60px;
@@ -508,60 +484,87 @@ header:hover .header-icon img {
 	padding: 0px;
 }
 
-.project .project-bottom-icons .bottom-icon.icon-hover {
+.project .bottom-icon:hover,
+.project .bottom-icon:focus,
+.project .bottom-icon:active {
 	transform: scale(1.5);
 	transition: transform 1s ease-in-out;
 	-webkit-transition: transform 1s ease-in-out;
 }
 
-.project.hovered,
+.project:hover,
+.project:focus,
+.project:active,
 .project:focus-within {
 	background: transparent;
 }
 
-.project.hovered .content,
+.project:hover .content,
+.project:focus .content,
+.project:active .content,
 .project:focus-within .content {
 	background-color: rgba(48,48,48, 0.2);
 }
 
-.project.hovered p,
+.project:hover p,
+.project:focus p,
+.project:active p,
 .project:focus-within p {
 	display: inline-block;
 	color: rgba(24,24,24, 0.8);
 }
 
-.project.hovered .project-bottom-icons,
+.project:hover .project-bottom-icons,
+.project:focus .project-bottom-icons,
+.project:active .project-bottom-icons,
 .project:focus-within .project-bottom-icons {
 	display: flex;
 }
 
-.project-icon.icon-hover,
-.project-icon:focus-within,
-.project-icon a:focus {
+.project-icon:has(a:focus),
+.project-icon:has(a:hover),
+.project-icon:has(a:active),
+.project-icon a:active,
+.project-icon a:focus
+.project-icon a:hover {
 	background-color: rgba(255, 255, 255, 0.9);
 	transform: scale(1.25);
 	transition: transform 1s ease-in-out;
 	-webkit-transition: transform 1s ease-in-out;
 }
 
-.project.hovered .project-icon,
+.project:hover .project-icon,
+.project:focus .project-icon,
+.project:active .project-icon,
 .project:focus-within .project-icon {
 	opacity: 1;
 }
 
-/* show icon over links to projects not currently hosted */
-.project.hovered.homeless .project-icon.site::after,
-.project.homeless:focus-within .project-icon.site::after {
-	background: url('imgs/maintenance-icon.svg') no-repeat center;
+/* style site icon(s) of homeless project when hover/focus/active */
+.project.homeless:hover .project-icon.site:after,
+.project.homeless:focus .project-icon.site:after,
+.project.homeless:active .project-icon.site:after,
+.project.homeless:focus-within .project-icon.site:after {
+	background: url('assets/maintenance-icon.svg') no-repeat center;
 }
-.project.hovered.dead .project-icon.site::after,
-.project.dead:focus-within .project-icon.site::after {
-	background: url('imgs/skull-and-bones-svgrepo-com.svg') no-repeat center;
+
+/* style site icon(s) of dead project when hover/focus/active */
+.project.dead:hover .project-icon.site:after,
+.project.dead:focus .project-icon.site:after,
+.project.dead:active .project-icon.site:after,
+.project.dead:focus-within .project-icon.site:after {
+	background: url('assets/skull-and-bones-svgrepo-com.svg') no-repeat center;
 }
-.project.hovered.homeless .project-icon.site::after,
-.project.hovered.dead .project-icon.site::after,
-.project.homeless:focus-within .project-icon.site::after,
-.project.dead:focus-within .project-icon.site::after {
+
+/* style site icon(s) of homeless + dead project when hover/focus/active */
+.project.homeless:hover .project-icon.site:after,
+.project.homeless:focus .project-icon.site:after,
+.project.homeless:active .project-icon.site:after,
+.project.homeless:focus-within .project-icon.site:after,
+.project.dead:hover .project-icon.site:after,
+.project.dead:focus .project-icon.site:after,
+.project.dead:active .project-icon.site:after,
+.project.dead:focus-within .project-icon.site:after {
 	content: "";
 	display: block;
 	position: absolute;
